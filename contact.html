@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Our Services — Zatb Sdn Bhd</title>
+	<meta name="description" content="Explore the services offered by Zatb Sdn Bhd, including consultancy, implementation, and managed services." />
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+	<!-- Main stylesheet -->
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="index.html"><span style="color: #5e2a2a; font-size: 25px; text-transform: uppercase;">ZATB</span><span class="brand-strong" style="color: #5e2a2a; font-size: 25px; text-transform: uppercase;"> SDN BHD</span></a>
+
+
+			<button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+
+			<nav class="site-nav" id="site-nav">
+				<ul>
+					<li><a href="index.html" style="font-size: 18px; text-transform: uppercase;">Home</a></li>
+                    <li><a href="partners.html" style="font-size: 18px; text-transform: uppercase;">Partners</a></li>
+					<li><a href="services.html" style="font-size: 18px; text-transform: uppercase;">Services</a></li>
+					<li><a href="product.html" class="active" style="font-size: 18px; text-transform: uppercase;">Products</a></li>
+                    <li><a href="gallery.html" style="font-size: 18px; text-transform: uppercase;">Gallery</a></li>
+					<li><a href="contact.html" style="font-size: 18px; text-transform: uppercase;">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="contact" style="padding: 60px 20px; background:#f5f5f5;">
+    <div style="max-width: 900px; margin: auto;">
+
+        <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 20px;">
+            Contact Us
+        </h2>
+
+        <p style="font-size: 18px; margin-bottom: 20px;">
+            Feel free to reach out to us for any inquiries or assistance.
+        </p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+
+            <!-- Contact Details -->
+            <div style="flex: 1; min-width: 260px;">
+                <h3 style="font-size: 22px; font-weight: 600;">ZATB SDN BHD</h3>
+                <p style="margin: 10px 0;">
+                    Address: No. 64 Jalan Tambur, 33/19,<br>
+                    Shah Alam Technology Park,<br>
+                    Seksyen 33, 40400 Shah Alam,<br>
+                    Selangor Darul Ehsan.
+                </p>
+
+                <p><strong>Office No:</strong> 03-5124 7791</p>
+				<p><strong>Fax No:</strong> 03-5124 7790</p>
+                <p><strong>Email:</strong> zain@zatb.com.my</p>
+            </div>
+
+            
+            <!-- Google Map -->
+            <div style="flex: 2; min-width: 280px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127.94494794221106!2d101.54482!3d3.0228343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb2b8f8b66d35%3A0x7272dc515ff185d1!2sZatb%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1700000000000"
+                    width="100%" 
+                    height="330" 
+                    style="border:0; border-radius: 12px;"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</section>
+
+</section>
+
+<section id="contact" style="padding: 60px 20px; background: #c0bdbd;">
+    
+    <div style="max-width: 700px; margin: auto;">
+
+        <!-- Title -->
+        <h2 style="
+            text-align: center;
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        ">
+        Get in touch
+        </h2>
+
+        <p style="
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #717070;
+        ">
+
+	<div class="form-container">
+    <h1>Contact Us</h1>
+    <p>Please fill in the form below. Your email app will open automatically to send the message.</p>
+
+    <form id="contactForm" class="contact-form" onsubmit="sendEmail(event)">
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label>Your Email</label>
+        <input type="email" id="email" placeholder="youremail@gmail.com" required>
+
+        <label>Message</label>
+        <textarea id="message" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<script>
+function sendEmail(event) {
+    event.preventDefault();
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    var subject = encodeURIComponent("New Inquiry from " + name);
+    var body = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n\n" +
+        "Message:\n" + message
+    );
+
+    window.location.href = "mailto:zain@zatb.com.my?subject=" + subject + "&body=" + body;
+}
+</script>
+
+
+		
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<div class="footer-brand">&reg; <span id="year"></span> <span style="color: #0c0c0c; font-size: 20px; text-transform: uppercase;">ZATB SDN BHD</span></div>
+			<nav class="footer-nav" aria-label="Footer">
+				<ul>
+					<li><a href="privacy.html">Privacy</a></li>
+					<li><a href="terms.html">Terms</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+
+	<script src="assets/script.js" defer></script>
+</body>
+</html>

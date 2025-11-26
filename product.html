@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Our Products — Zatb Sdn Bhd</title>
+	<meta name="description" content="Explore the products offered by Zatb Sdn Bhd, designed to meet your business needs." />
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+	<!-- Main stylesheet -->
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="index.html"><span style="color: #5e2a2a; font-size: 25px; text-transform: uppercase;">ZATB</span><span class="brand-strong" style="color: #5e2a2a; font-size: 25px; text-transform: uppercase;"> SDN BHD</span></a>
+
+			<button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+
+			<nav class="site-nav" id="site-nav">
+				<ul>
+					<li><a href="index.html" style="font-size: 18px; text-transform: uppercase;">Home</a></li>
+                    <li><a href="partners.html" style="font-size: 18px; text-transform: uppercase;">Partners</a></li>
+					<li><a href="services.html" style="font-size: 18px; text-transform: uppercase;">Services</a></li>
+					<li><a href="product.html" class="active" style="font-size: 18px; text-transform: uppercase;">Products</a></li>
+                    <li><a href="gallery.html" style="font-size: 18px; text-transform: uppercase;">Gallery</a></li>
+					<li><a href="contact.html" style="font-size: 18px; text-transform: uppercase;">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		
+
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZATB Products</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .product-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .product-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .product-header h1 {
+            color: #8B0000;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .product-header p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #fafafa;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            color: #8B0000;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .product-info p {
+            color: #333;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .btn-view {
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: #8B0000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-view:hover {
+            background-color: #B22222;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+        <div class="product-header">
+            <h1>Our Products</h1>
+            <p>High-quality fire fighting & rescue equipment supplied by ZATB Sdn Bhd</p>
+
+            <!-- Brand Filter -->
+            <div class="brand-filter" style="margin-top:25px;">
+                <label for="brandSelect" style="font-weight:bold; color:#131194;">Select Brand:</label>
+                <select id="brandSelect" style="padding:10px; border-radius:8px; border:1px solid #ccc; margin-left:10px;">
+                    <option value="all">All Brands</option>
+                    <option value="draeger">Draeger</option>
+                    <option value="waterax">Waterax</option>
+                    <option value="comptrade">Comptrade</option>
+					<option value="willburt">Willburt</option>
+                    <option value="karenswood">Karenswood International Ltd</option>
+                </select>
+            </div>
+        </div>
+
+         <div class="product-grid" id="productGrid">
+            <div class="product-card" data-brand="draeger">
+                <img src="assets/images/proair.png" alt="Product">
+                <article class="card">
+						<a href="assets/pdf/bgproair.pdf" download>Download PDF</a>
+</a>
+						<p>The Dräger BG ProAir is a positive pressure closed circuit breathing apparatus that combines uncompromising safety with the highest level of breathing and carrying comfort.</p>
+					</article>
+
+            </div>
+                <div class="product-grid" id="productGrid">
+            <div class="product-card" data-brand="draeger">
+                <img src="assets/images/pss air boss.png" alt="Product">
+                <article class="card">
+						<a href="assets/pdf/pss-airboss.pdf" download>Download PDF</a>
+</a>
+						<p>The Dräger PSS AirBoss offers best in class ergonomics and is one of the lightest weight breathing apparatus for firefighting.</p>
+					</article>
+            </div>
+            </div>
+
+        <div class="product-grid" id="productGrid">
+            <div class="product-card" data-brand="waterax">
+                <img src="assets/images/watson.png" alt="Product">
+                <article class="card">
+						<a href="assets/pdf/watson-brochure.pdf" download>Download PDF</a>
+</a>
+						<p>MARK-3® Watson Edition High-Pressure Fire Pump</p>
+					</article>
+            
+            </div>
+
+        </div>
+
+        <div class="product-grid" id="productGrid">
+            <div class="product-card" data-brand="comptrade">
+                <img src="assets/images/Compressor.jpg" alt="Product">
+                <article class="card">
+						<a href="assets/pdf/CT_Brochure.pdf" download>Download PDF</a>
+</a>
+						<p>Overview of our High Pressure and Breathing Air Compressors</p>
+					</article>
+            
+            </div>
+
+        </div>
+
+        <div class="product-grid" id="productGrid">
+            <div class="product-card" data-brand="willburt">
+                <img src="assets/images/lightmast.jpg" alt="Product">
+                <article class="card">
+						<a href="assets/pdf/Night Scan Light Towers.pdf" download>Download PDF</a>
+</a>
+						<p>Telescopic Masts & Towers</p>
+					</article>
+            
+            </div>
+
+        </div>
+
+		<div class="product-grid" id="productGrid">
+            <div class="product-card" data-brand="karenswood">
+                <img src="assets/images/kare.png" alt="Product">
+                <article class="card">
+						<a href="assets/pdf/Karenswood (International) Ltd.pdf" download>Download PDF</a>
+</a>
+						<p>Specialist Trained Dogs</p>
+					</article>
+            
+            </div>
+            </div>
+        </div></div>
+    </div>
+
+	<script>
+// Redirect View More button to brand-specific pages
+document.querySelectorAll('.btn-view').forEach(button => {
+button.addEventListener('click', function(e) {
+e.preventDefault();
+const brand = this.closest('.product-card').dataset.brand;
+window.location.href = `product-${brand}.html`;
+});
+});
+</script>
+
+<script>
+    const brandSelect = document.getElementById('brandSelect');
+    const cards = document.querySelectorAll('.product-card');
+
+    brandSelect.addEventListener('change', () => {
+        const selectedBrand = brandSelect.value;
+
+        cards.forEach(card => {
+            const brand = card.getAttribute('data-brand');
+
+            if (selectedBrand === 'all' || selectedBrand === brand) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+</main>
+
+
+</html>
+
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<div class="footer-brand">&reg;<span id="year"></span> <span style="color: #0a0a0a; font-size: 20px; text-transform: uppercase;">ZATB SDN BHD</span></div>
+			<nav class="footer-nav" aria-label="Footer">
+				<ul>
+					<li><a href="privacy.html">Privacy</a></li>
+					<li><a href="terms.html">Terms</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+
+	<script src="assets/script.js" defer></script>
+</body>
+</html>
