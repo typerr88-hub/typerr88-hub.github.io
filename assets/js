@@ -54,21 +54,24 @@ function prevSlide() {
 }
 
 
-// MOBILE NAV TOGGLE
-const navToggle = document.getElementById("nav-toggle");
-const siteNav = document.getElementById("site-nav");
+document.addEventListener("DOMContentLoaded", () => {
 
-navToggle.addEventListener("click", () => {
-    const isOpen = navToggle.classList.toggle("active");
-    siteNav.classList.toggle("open");
-    document.body.classList.toggle("menu-open", isOpen);
-});
+    const navToggle = document.getElementById("nav-toggle");
+    const siteNav   = document.getElementById("site-nav");
 
-// Close menu if user clicks any nav link
-document.querySelectorAll(".site-nav a").forEach(link => {
-    link.addEventListener("click", () => {
-        navToggle.classList.remove("active");
-        siteNav.classList.remove("open");
-        document.body.classList.remove("menu-open");
+    if (!navToggle || !siteNav) return;
+
+    navToggle.addEventListener("click", () => {
+        const isOpen = siteNav.classList.toggle("open");
+        navToggle.classList.toggle("active");
+        document.body.classList.toggle("menu-open", isOpen);
+    });
+
+    document.querySelectorAll("#site-nav a").forEach(link => {
+        link.addEventListener("click", () => {
+            siteNav.classList.remove("open");
+            navToggle.classList.remove("active");
+            document.body.classList.remove("menu-open");
+        });
     });
 });
