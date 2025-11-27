@@ -1,54 +1,194 @@
-<section class="hero">
-    <div class="container hero-grid">
-        <div class="hero-content">
-            <h1 class="page-title">OUR PARTNERS</h1>
-            <p class="lead">Discover our trusted partners and globally recognized brands.</p>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Our Partners — ZATB Sdn Bhd</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <style>
+        /* =====================
+           PARTNERS SECTION FIX
+        ====================== */
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 18px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        /* Hover desktop only */
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.16);
+        }
+
+        .card-img {
+            max-width: 160px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 12px;
+
+            transition: transform .35s ease, filter .35s ease;
+        }
+
+        /* Zoom + Glow */
+        .card:hover .card-img {
+            transform: scale(1.12);
+            filter: drop-shadow(0 0 10px rgba(94, 42, 42, 0.45));
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        /* Disable hover for mobile */
+        @media (hover: none) {
+            .card:hover {
+                transform: none;
+                box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+            }
+
+            .card:hover .card-img {
+                transform: none;
+                filter: none;
+            }
+        }
+
+        /* Mobile adjustment */
+        @media (max-width: 480px) {
+            .card-img {
+                max-width: 130px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span style="color: #5e2a2a; font-size: 25px; text-transform: uppercase;">ZATB</span>
+                <span class="brand-strong" style="color: #5e2a2a; font-size: 25px; text-transform: uppercase;"> SDN BHD</span>
+            </a>
+
+            <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="partners.html">Partners</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-</section>
+    </header>
 
-<section class="section">
-    <div class="container">
-        <h2 class="section-title">Featured Partners</h2>
-        <p class="section-sub">Explore internationally recognised brands we represent.</p>
 
-        <div class="partners-grid">
-
-            <article class="partner-card">
-                <a href="https://www.draeger.com" target="_blank">
-                    <img src="assets/images/draegerlogo.png" alt="Draeger Logo" class="partner-img">
-                </a>
-                <p>Explore our range of Fire Services products including PSS® AirBoss SCBA, Type 4 NANO Cylinder and more.</p>
-            </article>
-
-            <article class="partner-card">
-                <a href="https://www.comptrade.at/en/index.html" target="_blank">
-                    <img src="assets/images/comptrade.png" alt="Comptrade Logo" class="partner-img">
-                </a>
-                <p>COMP TRADE GmbH is a global leader in air supply systems and high-pressure compressors.</p>
-            </article>
-
-            <article class="partner-card">
-                <a href="https://www.waterax.com/en/home" target="_blank">
-                    <img src="assets/images/waterax.png" alt="Waterax Logo" class="partner-img">
-                </a>
-                <p>Precision-engineered wildfire pumps designed to move water efficiently for firefighter operations.</p>
-            </article>
-
-            <article class="partner-card">
-                <a href="https://www.karenswood.com" target="_blank">
-                    <img src="assets/images/kare.png" alt="Karenswood Logo" class="partner-img">
-                </a>
-                <p>International expertise in specialist search dog training for rescue operations.</p>
-            </article>
-
-            <article class="partner-card">
-                <a href="https://www.willburt.com/index.html" target="_blank">
-                    <img src="assets/images/willburt.png" alt="Willburt Logo" class="partner-img">
-                </a>
-                <p>Will-Burt provides elevation, lighting and security solutions trusted worldwide.</p>
-            </article>
-
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1 style="color: #5e2a2a; font-size: 28px; text-transform: uppercase;">OUR PARTNERS</h1>
+                <p class="lead">Discover our range of innovative products designed to help your business succeed.</p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
+    <!-- PARTNERS SECTION -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-sub">Explore our top products that deliver exceptional value and performance.</p>
+
+            <div class="cards-grid">
+
+                <article class="card">
+                    <a href="https://www.draeger.com" target="_blank">
+                        <img src="assets/images/draegerlogo.png" alt="Draeger Logo" class="card-img">
+                    </a>
+                    <p>PSS® AirBoss SCBA, NANO Cylinder, HPS® SafeGuard Helmet and more.</p>
+                </article>
+
+                <article class="card">
+                    <a href="https://www.comptrade.at/en/index.html" target="_blank">
+                        <img src="assets/images/comptrade.png" alt="Comptrade Logo" class="card-img">
+                    </a>
+                    <p>High-pressure compressors and air supply systems.</p>
+                </article>
+
+                <article class="card">
+                    <a href="https://www.waterax.com/en/home" target="_blank">
+                        <img src="assets/images/waterax.png" alt="Waterax Logo" class="card-img">
+                    </a>
+                    <p>Lightweight portable pumps for wildland firefighters.</p>
+                </article>
+
+                <article class="card">
+                    <a href="https://www.karenswood.com" target="_blank">
+                        <img src="assets/images/kare.png" alt="Karenswood Logo" class="card-img">
+                    </a>
+                    <p>Expert training for specialist search dogs.</p>
+                </article>
+
+                <article class="card">
+                    <a href="https://www.willburt.com/index.html" target="_blank">
+                        <img src="assets/images/willburt.png" alt="Willburt Logo" class="card-img">
+                    </a>
+                    <p>Industry-leading elevation & lighting systems.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">&reg; <span id="year"></span> ZATB SDN BHD</div>
+            <nav class="footer-nav" aria-label="Footer">
+                <ul>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="ass
