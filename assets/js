@@ -8,3 +8,39 @@ function changeSlide() {
 }
 
 setInterval(changeSlide, 4000); // slide every 4 seconds
+
+
+let startX = 0;
+let endX = 0;
+
+const slider = document.querySelector('.hero-swiper');
+
+slider.addEventListener('touchstart', function(e) {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchmove', function(e) {
+    endX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', function() {
+    if (startX - endX > 50) {
+        // Swipe left → next slide
+        nextSlide();
+    } else if (endX - startX > 50) {
+        // Swipe right → previous slide
+        prevSlide();
+    }
+});
+
+function nextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
+
+function prevSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
