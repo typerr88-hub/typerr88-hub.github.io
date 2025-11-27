@@ -1,0 +1,10 @@
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slide');
+
+function changeSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
+
+setInterval(changeSlide, 4000); // slide every 4 seconds
