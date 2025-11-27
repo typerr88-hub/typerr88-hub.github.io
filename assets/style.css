@@ -457,3 +457,68 @@ img {
         margin-top: 10px;
     }
 }
+
+/* ===================== PARTNERS SECTION====================== */
+
+/* Page Title */
+.page-title {
+    color: #5e2a2a;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Partners Grid */
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+/* Partner Card */
+.partner-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+/* Partner Logo */
+.partner-img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 15px;
+}
+
+/* Partner Text */
+.partner-card p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 24px;
+    }
+
+    .partner-card {
+        padding: 18px;
+    }
+
+    .partner-img {
+        max-width: 140px;
+    }
+}
