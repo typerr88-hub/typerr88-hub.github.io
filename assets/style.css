@@ -428,7 +428,7 @@ img {
 }
 
 /* RESPONSIVE */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .hero-text h1 {
         font-size: 1.8rem;
     }
