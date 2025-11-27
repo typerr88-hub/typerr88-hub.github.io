@@ -7,6 +7,14 @@ function changeSlide() {
     slides[currentSlide].classList.add('active');
 }
 
+let slideInterval = setInterval(changeSlide, 4000);
+
+slider.addEventListener('touchstart', () => clearInterval(slideInterval));
+slider.addEventListener('touchend', () => {
+    slideInterval = setInterval(changeSlide, 4000);
+});
+
+
 setInterval(changeSlide, 4000); // slide every 4 seconds
 
 
