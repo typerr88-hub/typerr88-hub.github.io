@@ -520,42 +520,28 @@ img {
 
 /* MOBILE RULES */
 @media (max-width: 900px) {
+    .site-nav {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        background: #fff;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .site-nav.open {
+        max-height: 400px; /* sesuaikan mengikut menu */
+    }
 
     .nav-toggle {
         display: block;
     }
-
-    .site-nav {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: #ffffff;
-        width: 100%;
-        padding: 20px 0;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-
-        /* animation */
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.35s ease;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-    }
-
-    .site-nav.open {
-        max-height: 400px; /* open menu */
-    }
-
-    .site-nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
-/* Prevent body scrolling when menu opened */
-body.menu-open {
-    overflow: hidden;
 }
 
 
