@@ -1,552 +1,283 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Zatb Sdn Bhd — Professional Services</title>
-	<meta name="description" content="Zatb Sdn Bhd — Trusted professional services and solutions." />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZATB Sdn Bhd — Professional Fire & Rescue Solutions</title>
+    <meta name="description" content="ZATB Sdn Bhd — Trusted supplier of professional fire and rescue equipment and services.">
 
-	<!-- Fonts (system fallback) -->
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-	<!-- Main stylesheet (kept external under assets as requested) -->
-	<link rel="stylesheet" href="assets/style.css">
-	<style>
-		/* Additional styling */
-		.brand span {
-			color: #5e2a2a;
-			font-size: 25px;
-			text-transform: uppercase;
-		}
-		.hero-image {
-			width: 100%;
-			max-width: 400px;
-			height: auto;
-			display: block;
-			margin: 0 auto;
-		}
-		.hero-content h1 span {
-			color: #5e2a2a;
-			font-size: 25px;
-			text-transform: uppercase;
-		}
-	</style>
+    <!-- Swiper Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-	<header class="site-header">
-		<div class="container header-inner">
-			<a class="brand" href="#"><span>ZATB</span><span class="brand-strong"> SDN BHD</span></a>
 
-			<button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="hamburger"></span>
-			</button>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <div class="container header-inner">
 
-			<nav class="site-nav" id="site-nav">
-				<ul>
-					<li><a href="index.html" style="font-size: 18px; text-transform: uppercase;">Home</a></li>
-                    <li><a href="partners.html" style="font-size: 18px; text-transform: uppercase;">Partners</a></li>
-					<li><a href="services.html" style="font-size: 18px; text-transform: uppercase;">Services</a></li>
-					<li><a href="product.html" class="active" style="font-size: 18px; text-transform: uppercase;">Products</a></li>
-                    <li><a href="gallery.html" style="font-size: 18px; text-transform: uppercase;">Gallery</a></li>
-					<li><a href="contact.html" style="font-size: 18px; text-transform: uppercase;">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+        <a class="brand" href="#">
+            <span class="brand-main">ZATB</span> <span class="brand-sub">SDN BHD</span>
+        </a>
 
-	<main>
-		<section id="home" class="hero">
-			<div class="container hero-grid">
-				<div class="hero-content">
-					
+        <!-- Mobile Toggle -->
+        <button class="nav-toggle" id="nav-toggle">
+            <span></span><span></span><span></span>
+        </button>
 
-			<h1>ZATB SDN BHD</h1>
-    Our principal activities are geared towards the different sectors and industries with a keen desire to provide the most comprehensive and reliable Fire and Rescue Equipment to protect lives and properties.
-</p>
-						
-						<div class="hover-box">
-
-    <div class="hover-buttons">
-        <a class="btn btn-primary" href="contact.html">Get in touch</a>
-        <a class="btn btn-secondary" href="services.html">Our Services</a>
+        <!-- Navigation -->
+        <nav class="site-nav" id="site-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-</div>
-
-					</p>
-
-				<div class="hero-visuals">
-    <div class="hero-slider">
-
-        <div class="slide active">
-            <div class="slide-left">
-                <img src="assets/images/draeger2.png" alt="Slide 1">
-            </div>
-            <div class="slide-right">
-                <img src="assets/images/draegerlogo.png" class="brand-logo" alt="Brand Logo">
-            </div>
-       
-        </div>
-        <div class="slide">
-            <div class="slide-left">
-                <img src="assets/images/watson12.jpg" alt="Slide 2">
-            </div>
-            <div class="slide-right">
-                <img src="assets/images/waterax.png" class="brand-logo" alt="Brand Logo">
-            </div>
-        
-        </div>
-        <div class="slide">
-            <div class="slide-left">
-                <img src="assets/images/Compressor.jpg" alt="Slide 3">
-            </div>
-            <div class="slide-right">
-                <img src="assets/images/comptrade.png" class="brand-logo" alt="Brand Logo">
-            </div>    
-
-         </div>       
-            <div class="slide">       
-            <div class="slide-left">
-                <img src="assets/images/pssairboss.png" alt="Slide 4">
-            </div>
-            <div class="slide-right">
-                <img src="assets/images/draegerlogo.png" class="brand-logo" alt="Brand Logo">
-			</div>
-
-        </div>    
-            <div class="slide">       
-            <div class="slide-left">
-                <img src="assets/images/willburtnight.jpg" alt="Slide 5">
-            </div>
-            <div class="slide-right">
-                <img src="assets/images/willburt.png" class="brand-logo" alt="Brand Logo">
-			</div>
-        </div>
-        <div class="slide">       
-            <div class="slide-left">
-                <img src="assets/images/karenswood2.png" alt="Slide 5">
-            </div>
-            <div class="slide-right">
-                <img src="assets/images/kare.png" class="brand-logo" alt="Brand Logo">
-			</div>
-        </div>
-		
-		<style>
-.hero-slider {
-    position: relative;
-    width: 150%;
-}
-
-.slide {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    opacity: 0;
-    transition: opacity 0.8s ease;
-    position: absolute;
-    width: 100%;
-}
-
-.slide.active {
-    opacity: 1;
-}
-
-/* Gambar utama (kiri) */
-.slide-left img {
-    width: 200%;
-    max-width: 500px;
-    border-radius: 30px;
-}
-
-/* Logo (kanan) */
-.slide-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-}
-
-.brand-logo {
-    width: 200px; /* kecil & kemas */
-    object-fit: contain;
-}
-</style>
-
-<script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('.hero-slider .slide');
-
-function changeSlide() {
-    slides[currentSlide].classList.remove('active');
-
-    currentSlide++;
-    if (currentSlide >= slides.length) {
-        currentSlide = 0;
-    }
-
-    slides[currentSlide].classList.add('active');
-}
-
-setInterval(changeSlide, 4000); /* 4 saat */
-</script>
-
-</div>
-		</section>
-
-		<section class="section">
-			<div class="container">
-				<h2 class="section-title">What We Offer</h2>
-				<p class="section-sub">Our services are designed to meet the unique needs of your organization.</p>
-
-          </article>
-		<div class="cards-grid">
-					<article class="card">
-						<a href="supply.html" class="title-link">
-    <h3 class="title">Supply</h3>
-</a>
-
-<style>
-/* Buat seluruh heading jadi clickable tanpa garis bawah */
-.title-link {
-    text-decoration: none;
-    display: inline;
-}
-
-/* Style untuk perkataan */
-.title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 10px;
-    color: #333;
-    transition: 0.3s;
-}
-
-/* Line bergaya bawah tulisan */
-.title::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    background: #3498db;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    border-radius: 3px;
-}
-
-/* Hover effect bila user letak mouse */
-.title-link:hover .title {
-    color: #3498db;
-    transform: scale(1.05);
-}
-</style>
-
-				<p>We provide reliable and certified products that meet international safety standards.</p>
-					</article>
-					<article class="card">
-						<a href="installation.html" class="title-link">
-    <h3 class="title">Installation</h3>
-	
-</a>
-
-<style>
-/* Buat seluruh heading jadi clickable tanpa garis bawah */
-.title-link {
-    text-decoration: none;
-    display: inline;
-}
-
-/* Style untuk perkataan */
-.title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 10px;
-    color: #333;
-    transition: 0.3s;
-}
-
-/* Line bergaya bawah tulisan */
-.title::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    background: #3498db;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    border-radius: 3px;
-}
-
-/* Hover effect bila user letak mouse */
-.title-link:hover .title {
-    color: #3498db;
-    transform: scale(1.05);
-}
-</style>
-
-
-<p>We provide installation of fire pumps, breathing apparatus systems, detection units, and rescue equipment.</p>
-					</article>
-					<article class="card">
-						<a href="training.html" class="title-link">
-    <h3 class="title">Training</h3>
-	
-</a>
-
-<style>
-/* Buat seluruh heading jadi clickable tanpa garis bawah */
-.title-link {
-    text-decoration: none;
-    display: inline;
-}
-
-/* Style untuk perkataan */
-.title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 10px;
-    color: #333;
-    transition: 0.3s;
-}
-
-/* Line bergaya bawah tulisan */
-.title::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    background: #3498db;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    border-radius: 3px;
-}
-
-/* Hover effect bila user letak mouse */
-.title-link:hover .title {
-    color: #3498db;
-    transform: scale(1.05);
-}
-</style>
-<p>We provide maintenance and troubleshooting training for all supplied equipment.</p>
-					</article>
-
-					<article class="card">
-						<a href="service&maintenance.html" class="title-link">
-    <h3 class="title">Service & Maintenance</h3>
-	
-</a>
-
-<style>
-/* Buat seluruh heading jadi clickable tanpa garis bawah */
-.title-link {
-    text-decoration: none;
-    display: inline;
-}
-
-/* Style untuk perkataan */
-.title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 10px;
-    color: #333;
-    transition: 0.3s;
-}
-
-/* Line bergaya bawah tulisan */
-.title::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    background: #3498db;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    border-radius: 3px;
-}
-
-/* Hover effect bila user letak mouse */
-.title-link:hover .title {
-    color: #3498db;
-    transform: scale(1.05);
-}
-</style>
-<p>We provide reliable after-sales support and maintenance.</p>
-					</article>
-				</div>
-			</div>
-		</section>
-
-		<section id="about" class="section">
-			<div class="container about-grid">
-				<div>
-					<h2>About Zatb</h2>
-				
-</style>
-</head>
-<body>
-<header>
-<h1>Welcome to ZATB</h1>
-<p>Fire Fighting & Rescue Equipment Specialists</p>
 </header>
 
 
-<div class="section">
-<h2>Our Services</h2>
-<p>
-ZATB offers our customers a unique one-stop centre for the supply, installation, testing, commissioning, training, and after-sales services of world-renowned Fire Fighting and Rescue Equipment.
-</p>
-</div>
 
+<!-- ================= HERO SECTION (SWIPER) ================= -->
+<section class="hero-section">
 
-<div class="section industry-section">
+    <!-- Swiper -->
+    <div class="swiper hero-swiper">
 
-    <!-- Gambar utama di atas -->
-    <div class="industry-image-top">
-        <img src="assets/images/boszain.JPG" alt="Industry Sectors">
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide hero-slide">
+                <img src="assets/images/draeger2.png" class="hero-img" alt="Draeger">
+                <img src="assets/images/draegerlogo.png" class="hero-logo" alt="Draeger Logo">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide hero-slide">
+                <img src="assets/images/watson12.jpg" class="hero-img" alt="Waterax">
+                <img src="assets/images/waterax.png" class="hero-logo" alt="Waterax Logo">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide hero-slide">
+                <img src="assets/images/Compressor.jpg" class="hero-img" alt="Comptrade">
+                <img src="assets/images/comptrade.png" class="hero-logo" alt="Comptrade Logo">
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide hero-slide">
+                <img src="assets/images/pssairboss.png" class="hero-img" alt="PSS Airboss">
+                <img src="assets/images/draegerlogo.png" class="hero-logo" alt="Brand Logo">
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide hero-slide">
+                <img src="assets/images/willburtnight.jpg" class="hero-img" alt="Willburt">
+                <img src="assets/images/willburt.png" class="hero-logo" alt="Willburt Logo">
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="swiper-slide hero-slide">
+                <img src="assets/images/karenswood2.png" class="hero-img" alt="Kare">
+                <img src="assets/images/kare.png" class="hero-logo" alt="Kare Logo">
+            </div>
+
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination"></div>
+
     </div>
 
-    <!-- Section teks & senarai -->
-    <div class="industry-content">
+    <!-- Hero Text Overlay -->
+    <div class="hero-text">
+        <h1>ZATB SDN BHD</h1>
+        <p>Leading provider of certified Fire Fighting & Rescue Equipment — supplying, installing, and maintaining life-saving systems since 2000.</p>
+
+        <div class="hero-buttons">
+            <a href="contact.html" class="btn-primary">Get in Touch</a>
+            <a href="services.html" class="btn-secondary">Our Services</a>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- ================= WHAT WE OFFER ================= -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">What We Offer</h2>
+        <p class="section-sub">Comprehensive and reliable solutions for your organization.</p>
+
+        <div class="cards-grid">
+
+            <article class="card">
+                <h3>Supply</h3>
+                <p>Certified and reliable products that meet international safety standards.</p>
+                <a href="supply.html" class="card-link">Learn More</a>
+            </article>
+
+            <article class="card">
+                <h3>Installation</h3>
+                <p>Professional installation of pumps, breathing apparatus systems, detection units, and rescue systems.</p>
+                <a href="installation.html" class="card-link">Learn More</a>
+            </article>
+
+            <article class="card">
+                <h3>Training</h3>
+                <p>Hands-on technical training and troubleshooting for all equipment supplied.</p>
+                <a href="training.html" class="card-link">Learn More</a>
+            </article>
+
+            <article class="card">
+                <h3>Service & Maintenance</h3>
+                <p>Reliable after-sales support, servicing, and preventive maintenance.</p>
+                <a href="service&maintenance.html" class="card-link">Learn More</a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+<section class="section about-section">
+    <div class="container about-grid">
+
+        <div>
+            <h2>About ZATB</h2>
+            <p>ZATB provides a one-stop solution for the supply, installation, testing, commissioning, training, and after-sales service of world-renowned Fire & Rescue Equipment.</p>
+
+            <ul class="about-list">
+                <li>Customer-first approach</li>
+                <li>Transparent delivery & service</li>
+                <li>Quality and safety focused</li>
+            </ul>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-num">20+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">100+</div>
+                <div class="stat-label">Projects Delivered</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ================= INDUSTRY SECTORS ================= -->
+<section class="section">
+
+    <div class="container">
         <h2>Industry Sectors We Serve</h2>
-        <p>Our key focus spans across multiple vital sectors, committed to providing trusted and comprehensive Fire & Rescue solutions:</p>
-        <ul>
+
+        <img src="assets/images/boszain.JPG" alt="Industry Sectors" class="industry-img">
+
+        <p>We supply essential fire & rescue solutions to major sectors including:</p>
+
+        <ul class="industry-list">
             <li>Municipal and Military Fire & Rescue Services</li>
             <li>Airport and Port Fire & Rescue Services</li>
             <li>Petrochemical and Oil & Gas Facilities</li>
             <li>Forestry Departments</li>
-            <li>And many others</li>
+            <li>And more...</li>
         </ul>
     </div>
 
-</div>
+</section>
 
 
 
-<div class="section">
-<h2>Our Expertise</h2>
-<p>
-Supported by a specialised team of dedicated and experienced professionals, ZATB has grown since its establishment in the year 2000. Strengthened by the expertise of our business partners, we have evolved into a reputable and performance-oriented company in the Fire and Rescue Equipment industry.
-</p>
-</div>
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact" class="section contact-section">
+    <div class="container">
 
+        <h2>Contact Us</h2>
+        <p>Fill in the form below. Your email app will open automatically.</p>
+
+        <form id="contactForm" class="contact-form" onsubmit="sendEmail(event)">
+            <label>Your Name</label>
+            <input type="text" id="name" required>
+
+            <label>Your Email</label>
+            <input type="email" id="email" required>
+
+            <label>Message</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+
+        <div class="footer-brand">&copy; <span id="year"></span> ZATB SDN BHD</div>
+
+        <nav class="footer-nav">
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+</footer>
+
+
+
+<!-- ================= JS SCRIPTS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+/* Mobile Nav Toggle */
+document.getElementById("nav-toggle").addEventListener("click", function () {
+    document.getElementById("site-nav").classList.toggle("open");
+    this.classList.toggle("open");
+});
+
+/* Contact Form */
+function sendEmail(e) {
+    e.preventDefault();
+    let name = name.value;
+    let email = email.value;
+    let message = message.value;
+
+    window.location.href = `mailto:typerr88@gmail.com?subject=Inquiry from ${name}&body=Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
+}
+
+/* Swiper Slider */
+const swiper = new Swiper('.hero-swiper', {
+    loop: true,
+    autoplay: { delay: 3500 },
+    pagination: { el: '.swiper-pagination', clickable: true }
+});
+
+/* Footer Year */
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
-
-
-This benefits the client in terms of cost effectiveness as it shortens the work contract duration. Quality is maintained as ZATB is responsible from the conceptual and recommendation stage right through to the testing and training stages. Our strongest advantage is that we provide excellent technical support and after sales services for products that we offer to the market.</p>
-					<ul class="about-list">
-						<li>Customer-first approach</li>
-						<li>Transparent pricing & delivery</li>
-						<li>Safety and quality-focused</li>
-					</ul>
-				</div>
-				<div>
-					<!-- small company stats -->
-					<div class="stats">
-						<div class="stat">
-							<div class="stat-num">20+</div>
-							<div class="stat-label">Years Experience</div>
-						</div>
-						<div class="stat">
-							<div class="stat-num">100+</div>
-							<div class="stat-label">Projects Delivered</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- CONTACT FORM -->
-        
-	
-        <section id="contact" style="padding: 60px 20px; background: #c0bdbd;">
-    
-    <div style="max-width: 700px; margin: auto;">
-
-        <!-- Title -->
-        <h2 style="
-            text-align: center;
-            font-size: 32px;
-            font-weight: 900;
-            margin-bottom: 10px;
-        ">
-        Get in touch
-        </h2>
-
-        <p style="
-            text-align: center;
-            font-size: 18px;
-            margin-bottom: 30px;
-            color: #717070;
-        ">
-		
-		<div class="form-container">
-    <h1>Contact Us</h1>
-    <p>Please fill in the form below. Your email app will open automatically to send the message.</p>
-
-    <form id="contactForm" class="contact-form" onsubmit="sendEmail(event)">
-        <label>Your Name</label>
-        <input type="text" id="name" placeholder="Enter your name" required>
-
-        <label>Your Email</label>
-        <input type="email" id="email" placeholder="youremail@gmail.com" required>
-
-        <label>Message</label>
-        <textarea id="message" placeholder="Write your message..." required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-</div>
-
-<script>
-function sendEmail(event) {
-    event.preventDefault();
-
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-
-    var subject = encodeURIComponent("New Inquiry from " + name);
-    var body = encodeURIComponent(
-        "Name: " + name + "\n" +
-        "Email: " + email + "\n\n" +
-        "Message:\n" + message
-    );
-
-    window.location.href = "mailto:typerr88@gmail.com?subject=" + subject + "&body=" + body;
-}
-</script>
-
-	</main>
-
-	<footer class="site-footer">
-		<div class="container footer-inner">
-			<div class="footer-brand">&reg;
-<span id="year"></span> <span>ZATB SDN BHD</span></div>
-			<nav class="footer-nav" aria-label="Footer">
-				<ul>
-					<li><a href="privacy.html">Privacy</a></li>
-					<li><a href="terms.html">Terms</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-<footer>
- 
-&reg;
-2025 ZATB SDN BHD. All Rights Reserved.
-
-</footer>
