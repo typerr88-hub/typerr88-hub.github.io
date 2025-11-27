@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="assets/style.css">
 
     <style>
-        /* =====================
-           PARTNERS SECTION FIX
-        ====================== */
+        /* =============================
+           PARTNERS CARD SECTION
+        ============================== */
 
         .cards-grid {
             display: grid;
@@ -37,7 +37,6 @@
             transition: 0.3s ease;
         }
 
-        /* Hover desktop only */
         .card:hover {
             transform: translateY(-6px);
             box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.16);
@@ -48,11 +47,9 @@
             width: 100%;
             height: auto;
             margin-bottom: 12px;
-
             transition: transform .35s ease, filter .35s ease;
         }
 
-        /* Zoom + Glow */
         .card:hover .card-img {
             transform: scale(1.12);
             filter: drop-shadow(0 0 10px rgba(94, 42, 42, 0.45));
@@ -64,20 +61,14 @@
             line-height: 1.4;
         }
 
-        /* Disable hover for mobile */
         @media (hover: none) {
-            .card:hover {
-                transform: none;
-                box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
-            }
-
+            .card:hover,
             .card:hover .card-img {
-                transform: none;
-                filter: none;
+                transform: none !important;
+                filter: none !important;
             }
         }
 
-        /* Mobile adjustment */
         @media (max-width: 480px) {
             .card-img {
                 max-width: 130px;
@@ -92,11 +83,12 @@
 
 <body>
 
-   <header class="site-header">
+<header class="site-header">
     <div class="container header-inner">
 
-        <a class="brand" href="#">
-            <span class="brand-main">ZATB</span> <span class="brand-sub">SDN BHD</span>
+        <a class="brand" href="index.html">
+            <span class="brand-main">ZATB</span>
+            <span class="brand-sub">SDN BHD</span>
         </a>
 
         <!-- Mobile Toggle -->
@@ -106,89 +98,119 @@
 
         <!-- Navigation -->
         <nav class="site-nav" id="site-nav">
-    <ul>
-        <li><a href="index.html" style="font-size: 18px; text-transform: uppercase;">Home</a></li>
-        <li><a href="partners.html" style="font-size: 18px; text-transform: uppercase;">Partners</a></li>
-        <li><a href="services.html" style="font-size: 18px; text-transform: uppercase;">Services</a></li>
-        <li><a href="product.html" style="font-size: 18px; text-transform: uppercase;">Products</a></li>
-        <li><a href="gallery.html" style="font-size: 18px; text-transform: uppercase;">Gallery</a></li>
-        <li><a href="contact.html" style="font-size: 18px; text-transform: uppercase;">Contact</a></li>
-    </ul>
-</nav>
+            <ul>
+                <!-- REMOVE HOME PERMINTAAN ANDA -->
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
     </div>
 </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <h1 style="color: #5e2a2a; font-size: 28px; text-transform: uppercase;">OUR PARTNERS</h1>
-                <p class="lead">Discover our range of innovative products designed to help your business succeed.</p>
-            </div>
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <h1 style="color: #5e2a2a; font-size: 28px; text-transform: uppercase;">OUR PARTNERS</h1>
+            <p class="lead">Discover our range of innovative products designed to help your business succeed.</p>
         </div>
-    </section>
+    </div>
+</section>
 
 
-    <!-- PARTNERS SECTION -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Featured Products</h2>
-            <p class="section-sub">Explore our top products that deliver exceptional value and performance.</p>
+<!-- PARTNERS SECTION -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <p class="section-sub">Explore our top products that deliver exceptional value and performance.</p>
 
-            <div class="cards-grid">
+        <div class="cards-grid">
 
-                <article class="card">
-                    <a href="https://www.draeger.com" target="_blank">
-                        <img src="assets/images/draegerlogo.png" alt="Draeger Logo" class="card-img">
-                    </a>
-                    <p>PSS® AirBoss SCBA, NANO Cylinder, HPS® SafeGuard Helmet and more.</p>
-                </article>
+            <article class="card">
+                <a href="https://www.draeger.com" target="_blank">
+                    <img src="assets/images/draegerlogo.png" class="card-img">
+                </a>
+                <p>PSS® AirBoss SCBA, NANO Cylinder, HPS® SafeGuard Helmet and more.</p>
+            </article>
 
-                <article class="card">
-                    <a href="https://www.comptrade.at/en/index.html" target="_blank">
-                        <img src="assets/images/comptrade.png" alt="Comptrade Logo" class="card-img">
-                    </a>
-                    <p>High-pressure compressors and air supply systems.</p>
-                </article>
+            <article class="card">
+                <a href="https://www.comptrade.at/en/index.html" target="_blank">
+                    <img src="assets/images/comptrade.png" class="card-img">
+                </a>
+                <p>High-pressure compressors and air supply systems.</p>
+            </article>
 
-                <article class="card">
-                    <a href="https://www.waterax.com/en/home" target="_blank">
-                        <img src="assets/images/waterax.png" alt="Waterax Logo" class="card-img">
-                    </a>
-                    <p>Lightweight portable pumps for wildland firefighters.</p>
-                </article>
+            <article class="card">
+                <a href="https://www.waterax.com/en/home" target="_blank">
+                    <img src="assets/images/waterax.png" class="card-img">
+                </a>
+                <p>Lightweight portable pumps for wildland firefighters.</p>
+            </article>
 
-                <article class="card">
-                    <a href="https://www.karenswood.com" target="_blank">
-                        <img src="assets/images/kare.png" alt="Karenswood Logo" class="card-img">
-                    </a>
-                    <p>Expert training for specialist search dogs.</p>
-                </article>
+            <article class="card">
+                <a href="https://www.karenswood.com" target="_blank">
+                    <img src="assets/images/kare.png" class="card-img">
+                </a>
+                <p>Expert training for specialist search dogs.</p>
+            </article>
 
-                <article class="card">
-                    <a href="https://www.willburt.com/index.html" target="_blank">
-                        <img src="assets/images/willburt.png" alt="Willburt Logo" class="card-img">
-                    </a>
-                    <p>Industry-leading elevation & lighting systems.</p>
-                </article>
+            <article class="card">
+                <a href="https://www.willburt.com/index.html" target="_blank">
+                    <img src="assets/images/willburt.png" class="card-img">
+                </a>
+                <p>Industry-leading elevation & lighting systems.</p>
+            </article>
 
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="footer-brand">&reg; <span id="year"></span> ZATB SDN BHD</div>
-            <nav class="footer-nav" aria-label="Footer">
-                <ul>
-                    <li><a href="privacy.html">Privacy</a></li>
-                    <li><a href="terms.html">Terms</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-brand">&reg; <span id="year"></span> ZATB SDN BHD</div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
 
-    <script src="ass
+<!-- FIXED MOBILE NAV TOGGLE -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navToggle = document.getElementById("nav-toggle");
+    const siteNav = document.getElementById("site-nav");
+
+    navToggle.addEventListener("click", () => {
+        navToggle.classList.toggle("active");
+        siteNav.classList.toggle("open");
+        document.body.classList.toggle("menu-open");
+    });
+
+    // FIXED VERSION REQUESTED
+    var navLinks = document.querySelectorAll("#site-nav a");
+
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+            navToggle.classList.remove("active");
+            siteNav.classList.remove("open");
+            document.body.classList.remove("menu-open");
+        });
+    });
+
+});
+</script>
+
+</body>
+</html>
