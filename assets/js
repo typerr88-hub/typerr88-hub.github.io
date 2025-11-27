@@ -52,3 +52,23 @@ function prevSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     slides[currentSlide].classList.add('active');
 }
+
+
+// MOBILE NAV TOGGLE
+const navToggle = document.getElementById("nav-toggle");
+const siteNav = document.getElementById("site-nav");
+
+navToggle.addEventListener("click", () => {
+    const isOpen = navToggle.classList.toggle("active");
+    siteNav.classList.toggle("open");
+    document.body.classList.toggle("menu-open", isOpen);
+});
+
+// Close menu if user clicks any nav link
+document.querySelectorAll(".site-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        navToggle.classList.remove("active");
+        siteNav.classList.remove("open");
+        document.body.classList.remove("menu-open");
+    });
+});
