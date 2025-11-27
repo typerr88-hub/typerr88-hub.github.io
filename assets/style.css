@@ -460,40 +460,13 @@ img {
 
 /* ===================== PARTNERS SECTION====================== */
 
-/* Page Title */
-.page-title {
-    color: #5e2a2a;
-    font-size: 32px;
-    text-transform: uppercase;
-    font-weight: 800;
-    text-align: center;
+/* Hover Zoom Effect for Partner Logos */
+.partner-card:hover .partner-img {
+    transform: scale(1.12);
 }
 
-/* Partners Grid */
-.partners-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    padding: 20px 0;
-}
-
-/* Partner Card */
-.partner-card {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: 0.3s ease;
-}
-
-.partner-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
-}
-
-/* Partner Logo */
 .partner-img {
+    transition: transform 0.35s ease;
     width: 100%;
     max-width: 180px;
     height: auto;
@@ -501,24 +474,19 @@ img {
     margin: 0 auto 15px;
 }
 
-/* Partner Text */
-.partner-card p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.4;
+/* Extra effect: smooth card glow on hover */
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.18);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .page-title {
-        font-size: 24px;
+/* Disable hover zoom on touch devices */
+@media (hover: none) {
+    .partner-card:hover .partner-img {
+        transform: none;
     }
-
-    .partner-card {
-        padding: 18px;
-    }
-
-    .partner-img {
-        max-width: 140px;
+    .partner-card:hover {
+        transform: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 }
