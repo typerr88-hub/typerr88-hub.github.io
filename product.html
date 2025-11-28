@@ -94,6 +94,10 @@
                     </div>
                 </div>
             </div>
+            <div class="intro-image" data-aos="fade-left">
+                <img src="assets/images/proair.png" alt="Product Equipment" class="intro-img">
+            </div>
+        </div>
     </div>
 </section>
 
@@ -106,7 +110,7 @@
                 <p>Browse equipment by manufacturer</p>
             </div>
             <div class="options-right">
-                <select id="brandSelect" class="brand-select">
+                <select id="brandFilter" class="brand-select" onchange="filterProducts()">
                     <option value="all">All Brands</option>
                     <option value="draeger">Dräger</option>
                     <option value="waterax">Waterax</option>
@@ -127,105 +131,105 @@
             <p class="section-subtitle">Explore our comprehensive range of safety and rescue equipment</p>
         </div>
 
-        <div class="products-thumbnail-grid" id="productGrid">
+        <div class="categories-grid" id="productGrid">
             <!-- DRAEGER PRODUCTS -->
-            <div class="product-thumbnail" data-brand="draeger" data-aos="fade-up" data-aos-delay="100">
-                <div class="thumbnail-box">
-                    <div class="thumbnail-image">
-                        <img src="assets/images/proair.png" alt="BG ProAir" class="product-img">
-                        <div class="brand-tag">Dräger</div>
-                    </div>
-                    <div class="thumbnail-info">
-                        <h4>Dräger BG ProAir</h4>
-                        <p class="product-type">Breathing Apparatus</p>
-                        <a href="assets/pdf/bgproair.pdf" download class="download-btn">
-                            <i class="fas fa-download"></i> PDF
-                        </a>
-                    </div>
+            <div class="category-card" data-brand="draeger" data-aos="fade-up" data-aos-delay="100">
+                <div class="category-image">
+                    <img src="assets/images/proair.png" alt="BG ProAir" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>Dräger BG ProAir</h3>
+                    <p>Positive pressure closed circuit breathing apparatus with superior safety and comfort for professional use.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Closed Circuit System</li>
+                        <li><i class="fas fa-check"></i> Superior Safety Features</li>
+                        <li><i class="fas fa-check"></i> Enhanced Comfort</li>
+                    </ul>
+                    <a href="assets/pdf/bgproair.pdf" download class="category-link">Download PDF <i class="fas fa-download"></i></a>
                 </div>
             </div>
 
-            <div class="product-thumbnail" data-brand="draeger" data-aos="fade-up" data-aos-delay="150">
-                <div class="thumbnail-box">
-                    <div class="thumbnail-image">
-                        <img src="assets/images/pss air boss.png" alt="AirBoss" class="product-img">
-                        <div class="brand-tag">Dräger</div>
-                    </div>
-                    <div class="thumbnail-info">
-                        <h4>Dräger PSS AirBoss</h4>
-                        <p class="product-type">Safety System</p>
-                        <a href="assets/pdf/pss-airboss.pdf" download class="download-btn">
-                            <i class="fas fa-download"></i> PDF
-                        </a>
-                    </div>
+            <div class="category-card" data-brand="draeger" data-aos="fade-up" data-aos-delay="200">
+                <div class="category-image">
+                    <img src="assets/images/pss air boss.png" alt="AirBoss" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>Dräger PSS AirBoss</h3>
+                    <p>One of the lightest breathing apparatus systems with superior ergonomics and advanced safety technology.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Lightweight Design</li>
+                        <li><i class="fas fa-check"></i> Superior Ergonomics</li>
+                        <li><i class="fas fa-check"></i> Advanced Safety</li>
+                    </ul>
+                    <a href="assets/pdf/pss-airboss.pdf" download class="category-link">Download PDF <i class="fas fa-download"></i></a>
                 </div>
             </div>
 
             <!-- WATERAX PRODUCTS -->
-            <div class="product-thumbnail" data-brand="waterax" data-aos="fade-up" data-aos-delay="200">
-                <div class="thumbnail-box">
-                    <div class="thumbnail-image">
-                        <img src="assets/images/watson.png" alt="Watson Pump" class="product-img">
-                        <div class="brand-tag">Waterax</div>
-                    </div>
-                    <div class="thumbnail-info">
-                        <h4>MARK-3® Watson Edition</h4>
-                        <p class="product-type">Fire Pump</p>
-                        <a href="assets/pdf/watson-brochure.pdf" download class="download-btn">
-                            <i class="fas fa-download"></i> PDF
-                        </a>
-                    </div>
+            <div class="category-card" data-brand="waterax" data-aos="fade-up" data-aos-delay="300">
+                <div class="category-image">
+                    <img src="assets/images/watson.png" alt="Watson Pump" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>MARK-3® Watson Edition</h3>
+                    <p>High-pressure fire pump built for rugged operational performance in demanding firefighting scenarios.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> High-Pressure Performance</li>
+                        <li><i class="fas fa-check"></i> Rugged Construction</li>
+                        <li><i class="fas fa-check"></i> Reliable Operation</li>
+                    </ul>
+                    <a href="assets/pdf/watson-brochure.pdf" download class="category-link">Download PDF <i class="fas fa-download"></i></a>
                 </div>
             </div>
 
             <!-- COMPTRADE PRODUCTS -->
-            <div class="product-thumbnail" data-brand="comptrade" data-aos="fade-up" data-aos-delay="250">
-                <div class="thumbnail-box">
-                    <div class="thumbnail-image">
-                        <img src="assets/images/Compressor.jpg" alt="Comptrade Compressor" class="product-img">
-                        <div class="brand-tag">Comptrade</div>
-                    </div>
-                    <div class="thumbnail-info">
-                        <h4>Comptrade Compressors</h4>
-                        <p class="product-type">Air Compressor</p>
-                        <a href="assets/pdf/CT_Brochure.pdf" download class="download-btn">
-                            <i class="fas fa-download"></i> PDF
-                        </a>
-                    </div>
+            <div class="category-card" data-brand="comptrade" data-aos="fade-up" data-aos-delay="400">
+                <div class="category-image">
+                    <img src="assets/images/Compressor.jpg" alt="Comptrade Compressor" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>Comptrade Compressors</h3>
+                    <p>High pressure and breathing air compressor solutions designed for professional safety applications.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> High-Pressure Systems</li>
+                        <li><i class="fas fa-check"></i> Breathing Air Quality</li>
+                        <li><i class="fas fa-check"></i> Professional Grade</li>
+                    </ul>
+                    <a href="assets/pdf/CT_Brochure.pdf" download class="category-link">Download PDF <i class="fas fa-download"></i></a>
                 </div>
             </div>
 
             <!-- WILLBURT PRODUCTS -->
-            <div class="product-thumbnail" data-brand="willburt" data-aos="fade-up" data-aos-delay="300">
-                <div class="thumbnail-box">
-                    <div class="thumbnail-image">
-                        <img src="assets/images/lightmast1.jpg" alt="Willburt Lightmast" class="product-img">
-                        <div class="brand-tag">Will-Burt</div>
-                    </div>
-                    <div class="thumbnail-info">
-                        <h4>Will-Burt Towers</h4>
-                        <p class="product-type">Lighting System</p>
-                        <a href="assets/pdf/Night Scan Light Towers.pdf" download class="download-btn">
-                            <i class="fas fa-download"></i> PDF
-                        </a>
-                    </div>
+            <div class="category-card" data-brand="willburt" data-aos="fade-up" data-aos-delay="500">
+                <div class="category-image">
+                    <img src="assets/images/lightmast1.jpg" alt="Willburt Lightmast" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>Will-Burt Towers</h3>
+                    <p>Telescopic mast and lighting tower systems for emergency response and professional applications.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Telescopic Design</li>
+                        <li><i class="fas fa-check"></i> Emergency Response</li>
+                        <li><i class="fas fa-check"></i> Professional Grade</li>
+                    </ul>
+                    <a href="assets/pdf/Night Scan Light Towers.pdf" download class="category-link">Download PDF <i class="fas fa-download"></i></a>
                 </div>
             </div>
 
             <!-- KARENSWOOD PRODUCTS -->
-            <div class="product-thumbnail" data-brand="karenswood" data-aos="fade-up" data-aos-delay="350">
-                <div class="thumbnail-box">
-                    <div class="thumbnail-image">
-                        <img src="assets/images/kare.png" alt="Karenswood Dogs" class="product-img">
-                        <div class="brand-tag">Karen's Wood</div>
-                    </div>
-                    <div class="thumbnail-info">
-                        <h4>Karenswood Dogs</h4>
-                        <p class="product-type">Detection Dogs</p>
-                        <a href="assets/pdf/Karenswood (International) Ltd.pdf" download class="download-btn">
-                            <i class="fas fa-download"></i> PDF
-                        </a>
-                    </div>
+            <div class="category-card" data-brand="karenswood" data-aos="fade-up" data-aos-delay="600">
+                <div class="category-image">
+                    <img src="assets/images/kare.png" alt="Karenswood Dogs" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>Karenswood Dogs</h3>
+                    <p>Specialist trained detection and rescue dogs with comprehensive training programs and certifications.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Trained Detection Dogs</li>
+                        <li><i class="fas fa-check"></i> Rescue Specialists</li>
+                        <li><i class="fas fa-check"></i> Certified Programs</li>
+                    </ul>
+                    <a href="assets/pdf/Karenswood (International) Ltd.pdf" download class="category-link">Download PDF <i class="fas fa-download"></i></a>
                 </div>
             </div>
         </div>
@@ -348,44 +352,42 @@ AOS.init({
 // Update footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// PRODUCT FILTER
-const brandSelect = document.getElementById('brandSelect');
-const productThumbnails = document.querySelectorAll('.product-thumbnail');
+// PRODUCT FILTER - Updated for category cards
+const brandFilter = document.getElementById('brandFilter');
+const categoryCards = document.querySelectorAll('.category-card');
 
-brandSelect.addEventListener('change', () => {
-    const selected = brandSelect.value;
-    productThumbnails.forEach(thumbnail => {
-        const brand = thumbnail.dataset.brand;
+brandFilter.addEventListener('change', () => {
+    const selected = brandFilter.value;
+    categoryCards.forEach(card => {
+        const brand = card.dataset.brand;
         if (selected === 'all' || selected === brand) {
-            thumbnail.style.display = 'block';
-            // Re-trigger AOS animation for visible thumbnails
-            thumbnail.classList.add('aos-animate');
+            card.style.display = 'block';
+            // Re-trigger AOS animation for visible cards
+            card.classList.add('aos-animate');
         } else {
-            thumbnail.style.display = 'none';
+            card.style.display = 'none';
         }
     });
 });
 
-// Enhanced thumbnail interactions
-productThumbnails.forEach(thumbnail => {
-    thumbnail.addEventListener('mouseenter', () => {
-        const box = thumbnail.querySelector('.thumbnail-box');
-        const img = thumbnail.querySelector('.product-img');
-        if (box) {
-            box.style.transform = 'translateY(-5px)';
-            box.style.boxShadow = '0 15px 35px rgba(94, 42, 42, 0.2)';
+// Enhanced category card interactions
+categoryCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        const image = card.querySelector('.category-image');
+        const img = card.querySelector('.category-img');
+        if (image) {
+            image.style.transform = 'scale(1.05)';
         }
         if (img) {
             img.style.transform = 'scale(1.1)';
         }
     });
     
-    thumbnail.addEventListener('mouseleave', () => {
-        const box = thumbnail.querySelector('.thumbnail-box');
-        const img = thumbnail.querySelector('.product-img');
-        if (box) {
-            box.style.transform = 'translateY(0)';
-            box.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+    card.addEventListener('mouseleave', () => {
+        const image = card.querySelector('.category-image');
+        const img = card.querySelector('.category-img');
+        if (image) {
+            image.style.transform = 'scale(1)';
         }
         if (img) {
             img.style.transform = 'scale(1)';

@@ -1,86 +1,516 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service & Maintenance</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Service & Maintenance — ZATB Sdn Bhd</title>
+	<meta name="description" content="Professional service and maintenance programs for fire safety and rescue equipment to ensure optimal performance." />
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: #f9f9f9;
-        }
+	<!-- Google Fonts - Modern Corporate Typography -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+	<!-- AOS Animation Library -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
-        }
-
-        .gallery img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-    </style>
+	<!-- Main stylesheet -->
+	<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-    <h1>Service & Maintenance Gallery</h1>
+<!-- HEADER -->
+<header class="site-header">
+    <div class="container header-inner">
 
-    <div class="gallery">
+        <a class="brand" href="index.html">
+            <span class="brand-main">ZATB</span>
+            <span class="brand-sub">SDN BHD</span>
+        </a>
 
-    <div class="gallery-item">
-        <img src="assets/Images/willburtinstall.jpeg" alt="">
-        <div class="gallery-text">
-            <h3>Troubleshooting Flood Light</h3>
-            <p>Emergency Work Repair</p>
+        <!-- MOBILE TOGGLE -->
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+
+        <!-- NAVIGATION -->
+        <nav class="site-nav" id="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+    <div class="page-hero-background">
+        <div class="page-hero-overlay"></div>
+        <img src="assets/images/menara-merdeka118.jpg" alt="Service & Maintenance" class="page-hero-bg">
+    </div>
+    <div class="container">
+        <div class="page-hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Service & <span class="highlight">Maintenance</span></h1>
+            <p class="page-hero-subtitle">Comprehensive maintenance programs to ensure optimal equipment performance and safety</p>
+            <nav class="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                <a href="services.html">Services</a>
+                <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                <span class="breadcrumb-current">Service & Maintenance</span>
+            </nav>
         </div>
     </div>
+</section>
 
-    <div class="gallery-item">
-        <img src="assets/Images/waterdam.jpg" alt="">
-        <div class="gallery-text">
-            <h3>Water Dam</h3>
-            <p>Portable and Durable water containment system for fire fighting and emergency operation</p>
+<!-- ================= MAINTENANCE INTRO ================= -->
+<section class="maintenance-intro-section">
+    <div class="container">
+        <div class="intro-grid">
+            <div class="intro-content" data-aos="fade-right">
+                <h2>Professional <span class="highlight">Maintenance Services</span></h2>
+                <p class="intro-text">ZATB SDN BHD provides comprehensive service and maintenance programs for fire safety and rescue equipment. Our certified technicians ensure your equipment operates at peak performance and meets safety compliance standards.</p>
+                <div class="intro-stats">
+                    <div class="intro-stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Emergency Support</div>
+                    </div>
+                    <div class="intro-stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="intro-stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Certified Technicians</div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-image" data-aos="fade-left">
+                <img src="assets/images/willburtinstall.jpeg" alt="Professional Maintenance" class="intro-img">
+            </div>
         </div>
     </div>
+</section>
 
-    <div class="gallery-item">
-        <img src="assets/Images/oiff.png" alt="">
-        <div class="gallery-text">
-            <h3>Offensive Indoor Fire Fighting</h3>
-            <p>Our fire houses permit the realistic simulation of fire behaviour in houses, industry or commercial buildings across several rooms and floors.</p>
+<!-- ================= MAINTENANCE SERVICES ================= -->
+<section class="maintenance-services-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Maintenance <span class="highlight">Services</span></h2>
+            <p class="section-subtitle">Comprehensive maintenance solutions to keep your equipment in optimal condition</p>
+        </div>
+
+        <div class="categories-grid">
+            <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="category-image">
+                    <img src="assets/images/proair.png" alt="SCBA Maintenance" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>SCBA Maintenance</h3>
+                    <p>Comprehensive maintenance for Self-Contained Breathing Apparatus including inspections, repairs, and certifications.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Regular inspections</li>
+                        <li><i class="fas fa-check"></i> Component replacement</li>
+                        <li><i class="fas fa-check"></i> Certification compliance</li>
+                    </ul>
+                    <a href="contact.html" class="category-link">Schedule Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="category-image">
+                    <img src="assets/images/Compressor.jpg" alt="Compressor Service" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>Compressor Systems</h3>
+                    <p>Professional maintenance for high-pressure and breathing air compressors including preventive and corrective maintenance.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Preventive maintenance</li>
+                        <li><i class="fas fa-check"></i> Performance optimization</li>
+                        <li><i class="fas fa-check"></i> Emergency repairs</li>
+                    </ul>
+                    <a href="contact.html" class="category-link">Schedule Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="category-image">
+                    <img src="assets/images/lightmast1.jpg" alt="Lighting Systems" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>Lighting Systems</h3>
+                    <p>Maintenance services for telescopic masts and lighting towers including mechanical and electrical system checks.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Mechanical inspection</li>
+                        <li><i class="fas fa-check"></i> Electrical testing</li>
+                        <li><i class="fas fa-check"></i> LED replacement</li>
+                    </ul>
+                    <a href="contact.html" class="category-link">Schedule Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="category-image">
+                    <img src="assets/images/watson.png" alt="Fire Pump Service" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>Fire Fighting Equipment</h3>
+                    <p>Maintenance for fire pumps and firefighting equipment ensuring readiness for emergency response operations.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Pump testing</li>
+                        <li><i class="fas fa-check"></i> Flow rate verification</li>
+                        <li><i class="fas fa-check"></i> System optimization</li>
+                    </ul>
+                    <a href="contact.html" class="category-link">Schedule Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="category-image">
+                    <img src="assets/images/waterdam.jpg" alt="Containment Systems" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>Containment Systems</h3>
+                    <p>Service and maintenance for water containment systems and portable firefighting equipment for optimal performance.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Material inspection</li>
+                        <li><i class="fas fa-check"></i> Seal testing</li>
+                        <li><i class="fas fa-check"></i> Repair services</li>
+                    </ul>
+                    <a href="contact.html" class="category-link">Schedule Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="category-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="category-image">
+                    <img src="assets/images/batg.png" alt="Emergency Service" class="category-img">
+                </div>
+                <div class="category-content">
+                    <h3>Emergency Service</h3>
+                    <p>24/7 emergency maintenance and repair services to ensure your safety equipment is always ready for critical operations.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> 24/7 availability</li>
+                        <li><i class="fas fa-check"></i> Rapid response</li>
+                        <li><i class="fas fa-check"></i> On-site repairs</li>
+                    </ul>
+                    <a href="contact.html" class="category-link">Emergency Contact <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
     </div>
+</section>
 
-    <div class="gallery-item">
-        <img src="assets/Images/FireKLIA3.jpg" alt="">
-        <div class="gallery-text">
-            <h3>Fire & Rescue Training</h3>
-            <p>Fire brigade advanced operational training at KLIA.</p>
+<!-- ================= MAINTENANCE PROCESS ================= -->
+<section class="maintenance-process-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Maintenance <span class="highlight">Process</span></h2>
+            <p class="section-subtitle">Our systematic approach ensures thorough maintenance and optimal equipment performance</p>
+        </div>
+
+        <div class="process-timeline">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-number">01</div>
+                <div class="timeline-content">
+                    <h3>Assessment & Planning</h3>
+                    <p>Comprehensive assessment of equipment condition and development of customized maintenance schedules based on usage and manufacturer recommendations.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-number">02</div>
+                <div class="timeline-content">
+                    <h3>Preventive Maintenance</h3>
+                    <p>Regular preventive maintenance including inspections, cleaning, lubrication, and component replacement according to scheduled intervals.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-number">03</div>
+                <div class="timeline-content">
+                    <h3>Testing & Certification</h3>
+                    <p>Performance testing and safety certifications to ensure equipment meets regulatory standards and operational requirements.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-number">04</div>
+                <div class="timeline-content">
+                    <h3>Documentation & Reporting</h3>
+                    <p>Complete documentation of all maintenance activities with detailed reports and recommendations for ongoing equipment care.</p>
+                </div>
+            </div>
         </div>
     </div>
+</section>
 
-    <div class="gallery-item">
-        <img src="assets/Images/batg.png" alt="">
-        <div class="gallery-text">
-            <h3>Installation Work</h3>
-            <p>Professional installation of certified safety equipment.</p>
+<!-- ================= SERVICE GALLERY ================= -->
+<section class="service-gallery-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Service <span class="highlight">Gallery</span></h2>
+            <p class="section-subtitle">Examples of our maintenance work and emergency repair services</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="gallery-image">
+                    <img src="assets/images/willburtinstall.jpeg" alt="Emergency Repair" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>Emergency Flood Light Repair</h4>
+                            <p>24/7 emergency maintenance service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-image">
+                    <img src="assets/images/compressorctp1.jpeg" alt="Compressor Service" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>Compressor Maintenance</h4>
+                            <p>Professional compressor service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="gallery-image">
+                    <img src="assets/images/waterdam.jpg" alt="Water Dam Service" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>Water Dam Maintenance</h4>
+                            <p>Containment system inspection</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="gallery-image">
+                    <img src="assets/images/oiff.png" alt="System Maintenance" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>Fire System Service</h4>
+                            <p>Complete system maintenance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="gallery-image">
+                    <img src="assets/images/FireKLIA3.jpg" alt="KLIA Service" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>KLIA Maintenance</h4>
+                            <p>Airport equipment service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="gallery-image">
+                    <img src="assets/images/batg.png" alt="Equipment Service" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h4>Equipment Maintenance</h4>
+                            <p>Regular service programs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</section>
+
+<!-- ================= SERVICE BENEFITS ================= -->
+<section class="service-benefits-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Service <span class="highlight">Benefits</span></h2>
+            <p class="section-subtitle">Why choose our maintenance services for your critical safety equipment</p>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h4>24/7 Emergency Support</h4>
+                <p>Round-the-clock emergency service to ensure your equipment is always operational when needed.</p>
+            </div>
+
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h4>Expert Technicians</h4>
+                <p>Certified technicians with specialized training on all major equipment brands and models.</p>
+            </div>
+
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h4>Scheduled Maintenance</h4>
+                <p>Customized maintenance schedules to prevent equipment failure and ensure optimal performance.</p>
+            </div>
+
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="benefit-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h4>Compliance Certification</h4>
+                <p>Ensure your equipment meets all safety standards and regulatory compliance requirements.</p>
+            </div>
+
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="benefit-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h4>Performance Optimization</h4>
+                <p>Regular maintenance to maximize equipment lifespan and maintain peak operational efficiency.</p>
+            </div>
+
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="benefit-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h4>Detailed Documentation</h4>
+                <p>Comprehensive maintenance records and reports for compliance tracking and warranty purposes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CTA SECTION ================= -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+            <h2>Need Maintenance Services?</h2>
+            <p>Contact our service team to schedule maintenance or request emergency support for your equipment</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">
+                    <i class="fas fa-wrench"></i>
+                    Schedule Service
+                </a>
+                <a href="tel:+60351247791" class="btn-secondary">
+                    <i class="fas fa-phone"></i>
+                    Emergency: 03-5124 7791
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3>ZATB <span>SDN BHD</span></h3>
+                        <p>Leading provider of fire safety and rescue equipment solutions across Malaysia.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Shah Alam Technology Park, Selangor</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>03-5124 7791</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>zain@zatb.com.my</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="supply.html">Supply & Procurement</a></li>
+                        <li><a href="installation.html">Installation Services</a></li>
+                        <li><a href="training.html">Training & Certification</a></li>
+                        <li><a href="service&maintenance.html">Maintenance & Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="partners.html">Our Partners</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="certifications">
+                        <h5>Certifications</h5>
+                        <div class="cert-logos">
+                            <img src="assets/images/ZATB - MOF 10.04.2023 - 31.05.2026-1.png" alt="MOF Certification" class="cert-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <p>&copy; <span id="year"></span> ZATB SDN BHD. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Main JavaScript -->
+<script src="assets/main.js"></script>
+
+<!-- Initialize Scripts -->
+<script>
+// Initialize AOS
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+});
+
+// Update footer year
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

@@ -1,87 +1,539 @@
-<section class="terms-section">
-  <div class="terms-container">
-    <h2>Terms &amp; Conditions</h2>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms of Service — ZATB Sdn Bhd</title>
 
-    <ol class="terms-list">
-      <li>
-        <strong>Acceptance of Terms</strong><br>
-        By using this website, you agree to these Terms &amp; Conditions. If you do not accept any part of them, please discontinue use of the site.
-      </li>
+    <!-- Google Fonts - Modern Corporate Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-      <li>
-        <strong>Use of the Website</strong><br>
-        You agree to use this website responsibly and lawfully. You shall not misuse, abuse, or interfere with its functions in any way.
-      </li>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-      <li>
-        <strong>Intellectual Property</strong><br>
-        All content on this site — including text, images, and graphics — is owned by us or licensed to us. You may not copy, reproduce, or reuse any content without our prior permission.
-      </li>
+    <!-- Your Main CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
 
-      <li>
-        <strong>Disclaimer / Limitation of Liability</strong><br>
-        The website is provided “as is” without any express or implied warranty. We are not liable for any direct or indirect loss or damage arising from your use of the site.
-      </li>
+<body>
 
-      <li>
-        <strong>Third-Party Links</strong><br>
-        This website may contain links to third-party sites. We do not control their content or how they use your data, so use such links at your own risk.
-      </li>
+<!-- HEADER -->
+<header class="site-header">
+    <div class="container header-inner">
 
-      <li>
-        <strong>Changes to Terms</strong><br>
-        We may revise these Terms at any time. Updated Terms will be published on this page. By continuing to use the site after changes, you accept the revised Terms.
-      </li>
+        <a class="brand" href="index.html">
+            <span class="brand-main">ZATB</span>
+            <span class="brand-sub">SDN BHD</span>
+        </a>
 
-      <li>
-        <strong>Governing Law</strong><br>
-        These Terms are governed by the laws of <strong>Malaysia</strong>. Any dispute arising under these Terms will be resolved in the courts of <strong>Selangor</strong>.
-      </li>
+        <!-- MOBILE TOGGLE -->
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
 
-      <li>
-        <strong>Termination</strong><br>
-        We reserve the right to suspend or terminate your access to the site if you breach any of these Terms.
-      </li>
+        <!-- NAVIGATION -->
+        <nav class="site-nav" id="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-      <li>
-        <strong>Contact Information</strong><br>
-        If you have any questions about these Terms, please contact us:<br>
-        <strong>Email:</strong> zain@zatb.com.my<br>
-        <strong>Office No.:</strong> 03-5124-7791
-      </li>
-    </ol>
-  </div>
+    </div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-section legal-hero">
+    <div class="hero-background">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>Terms of <span class="highlight">Service</span></h1>
+                    <p class="hero-subtitle">Legal terms and conditions governing the use of ZATB SDN BHD services</p>
+                    <div class="hero-breadcrumb">
+                        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                        <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                        <span>Terms of Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<style>
-.terms-section {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  color: #333;
-}
+<!-- ================= TERMS CONTENT SECTION ================= -->
+<section class="terms-section">
+    <div class="container">
+        <div class="terms-header" data-aos="fade-up">
+            <div class="last-updated">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Last updated: November 28, 2024</span>
+            </div>
+            <p class="terms-intro">
+                These Terms of Service ("Terms") govern your use of ZATB SDN BHD's services, products, and website. 
+                By engaging our services or using our website, you agree to be bound by these terms.
+            </p>
+        </div>
 
-.terms-container {
-  max-width: 800px;
-  margin: auto;
-}
+        <div class="terms-content">
+            <!-- Table of Contents -->
+            <div class="terms-toc" data-aos="fade-right">
+                <h3><i class="fas fa-list"></i> Table of Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                    <li><a href="#services">2. Services Description</a></li>
+                    <li><a href="#user-obligations">3. User Obligations</a></li>
+                    <li><a href="#payment-terms">4. Payment Terms</a></li>
+                    <li><a href="#warranties">5. Warranties and Disclaimers</a></li>
+                    <li><a href="#liability">6. Limitation of Liability</a></li>
+                    <li><a href="#intellectual-property">7. Intellectual Property</a></li>
+                    <li><a href="#termination">8. Termination</a></li>
+                    <li><a href="#governing-law">9. Governing Law</a></li>
+                    <li><a href="#contact-info">10. Contact Information</a></li>
+                </ul>
+            </div>
 
-.terms-container h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
+            <!-- Terms Sections -->
+            <div class="terms-main" data-aos="fade-left">
+                
+                <!-- Section 1 -->
+                <div class="terms-section-item" id="acceptance">
+                    <h2><span class="section-number">1.</span> Acceptance of Terms</h2>
+                    <div class="terms-content-block">
+                        <p>
+                            By accessing and using the services provided by ZATB SDN BHD (Company Registration No. 201401023095), 
+                            you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and 
+                            all applicable laws and regulations.
+                        </p>
+                        <p>
+                            If you do not agree with any part of these terms, you must not use our services or access our website.
+                        </p>
+                        <div class="highlight-box">
+                            <i class="fas fa-info-circle"></i>
+                            <p><strong>Important:</strong> These terms apply to all users, clients, and visitors of ZATB SDN BHD services and website.</p>
+                        </div>
+                    </div>
+                </div>
 
-.terms-list {
-  list-style: decimal inside;
-  line-height: 1.7;
-}
+                <!-- Section 2 -->
+                <div class="terms-section-item" id="services">
+                    <h2><span class="section-number">2.</span> Services Description</h2>
+                    <div class="terms-content-block">
+                        <p>ZATB SDN BHD provides the following professional services:</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check-circle"></i> <strong>Supply & Procurement:</strong> Fire safety and rescue equipment from certified international manufacturers</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Installation Services:</strong> Professional installation of fire safety systems and equipment</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Training & Certification:</strong> Technical training programs and safety certifications</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Maintenance & Support:</strong> Ongoing maintenance, servicing, and technical support</li>
+                        </ul>
+                        <p>
+                            All services are provided in accordance with Malaysian safety standards and international best practices. 
+                            Service specifications and deliverables will be detailed in individual service agreements or quotations.
+                        </p>
+                    </div>
+                </div>
 
-.terms-list li {
-  margin-bottom: 15px;
-}
+                <!-- Section 3 -->
+                <div class="terms-section-item" id="user-obligations">
+                    <h2><span class="section-number">3.</span> User Obligations</h2>
+                    <div class="terms-content-block">
+                        <p>As a client or user of our services, you agree to:</p>
+                        <ul class="obligations-list">
+                            <li><i class="fas fa-shield-alt"></i> Provide accurate and complete information for all service requests</li>
+                            <li><i class="fas fa-shield-alt"></i> Comply with all safety protocols and guidelines provided by ZATB SDN BHD</li>
+                            <li><i class="fas fa-shield-alt"></i> Ensure proper site access and safety conditions for our technicians</li>
+                            <li><i class="fas fa-shield-alt"></i> Follow all maintenance schedules and recommendations provided</li>
+                            <li><i class="fas fa-shield-alt"></i> Use equipment only for its intended purpose and within specified parameters</li>
+                            <li><i class="fas fa-shield-alt"></i> Notify ZATB SDN BHD immediately of any equipment malfunctions or safety concerns</li>
+                        </ul>
+                        <div class="warning-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <p><strong>Safety Notice:</strong> Failure to comply with safety guidelines may void warranties and service agreements.</p>
+                        </div>
+                    </div>
+                </div>
 
-.terms-list li strong {
-  font-weight: bold;
-}
-</style>
+                <!-- Section 4 -->
+                <div class="terms-section-item" id="payment-terms">
+                    <h2><span class="section-number">4.</span> Payment Terms</h2>
+                    <div class="terms-content-block">
+                        <div class="payment-grid">
+                            <div class="payment-item">
+                                <h4><i class="fas fa-file-invoice"></i> Quotations & Pricing</h4>
+                                <p>All quotations are valid for 30 days unless otherwise specified. Prices are subject to change based on market conditions and currency fluctuations.</p>
+                            </div>
+                            <div class="payment-item">
+                                <h4><i class="fas fa-credit-card"></i> Payment Schedule</h4>
+                                <p>Standard payment terms are Net 30 days from invoice date. Project-specific payment schedules will be outlined in individual agreements.</p>
+                            </div>
+                            <div class="payment-item">
+                                <h4><i class="fas fa-percentage"></i> Late Payments</h4>
+                                <p>Late payment charges of 1.5% per month may be applied to overdue accounts. ZATB SDN BHD reserves the right to suspend services for non-payment.</p>
+                            </div>
+                            <div class="payment-item">
+                                <h4><i class="fas fa-money-bill-wave"></i> Accepted Methods</h4>
+                                <p>We accept bank transfers, company checks, and approved corporate credit arrangements. All payments must be in Malaysian Ringgit (MYR).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Section 5 -->
+                <div class="terms-section-item" id="warranties">
+                    <h2><span class="section-number">5.</span> Warranties and Disclaimers</h2>
+                    <div class="terms-content-block">
+                        <div class="warranty-section">
+                            <h4><i class="fas fa-award"></i> Product Warranties</h4>
+                            <p>
+                                All equipment supplied by ZATB SDN BHD carries manufacturer warranties as specified in product documentation. 
+                                ZATB SDN BHD provides additional service warranties for installation and maintenance work as detailed 
+                                in individual service agreements.
+                            </p>
+                        </div>
+                        <div class="warranty-section">
+                            <h4><i class="fas fa-tools"></i> Service Warranties</h4>
+                            <p>
+                                Installation services are warranted for a period of 12 months from completion date, subject to proper 
+                                equipment usage and maintenance. This warranty covers workmanship and does not extend to normal wear and tear.
+                            </p>
+                        </div>
+                        <div class="disclaimer-box">
+                            <h4><i class="fas fa-exclamation-circle"></i> Disclaimers</h4>
+                            <p>
+                                ZATB SDN BHD makes no warranties beyond those expressly stated. Services are provided "as is" and 
+                                we disclaim all implied warranties including merchantability and fitness for a particular purpose, 
+                                except where prohibited by law.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Section 6 -->
+                <div class="terms-section-item" id="liability">
+                    <h2><span class="section-number">6.</span> Limitation of Liability</h2>
+                    <div class="terms-content-block">
+                        <p>
+                            ZATB SDN BHD's total liability for any claims related to our services shall not exceed the amount 
+                            paid by the client for the specific service giving rise to the claim.
+                        </p>
+                        <div class="liability-exclusions">
+                            <h4>Exclusions of Liability</h4>
+                            <p>ZATB SDN BHD shall not be liable for:</p>
+                            <ul>
+                                <li>Indirect, incidental, or consequential damages</li>
+                                <li>Loss of profits, revenue, or business opportunities</li>
+                                <li>Damages resulting from improper use or maintenance of equipment</li>
+                                <li>Force majeure events beyond our reasonable control</li>
+                                <li>Third-party actions or omissions</li>
+                            </ul>
+                        </div>
+                        <div class="insurance-note">
+                            <i class="fas fa-shield-alt"></i>
+                            <p><strong>Insurance:</strong> ZATB SDN BHD maintains appropriate professional liability and public liability insurance coverage.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 7 -->
+                <div class="terms-section-item" id="intellectual-property">
+                    <h2><span class="section-number">7.</span> Intellectual Property</h2>
+                    <div class="terms-content-block">
+                        <p>
+                            All intellectual property rights in materials, documentation, training content, and proprietary 
+                            methodologies developed or provided by ZATB SDN BHD remain our exclusive property.
+                        </p>
+                        <div class="ip-grid">
+                            <div class="ip-item">
+                                <h4><i class="fas fa-copyright"></i> Proprietary Materials</h4>
+                                <p>Training materials, technical documentation, and service methodologies are protected by copyright and trade secret laws.</p>
+                            </div>
+                            <div class="ip-item">
+                                <h4><i class="fas fa-trademark"></i> Trademarks</h4>
+                                <p>ZATB SDN BHD name, logo, and service marks are our registered trademarks and may not be used without written permission.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 8 -->
+                <div class="terms-section-item" id="termination">
+                    <h2><span class="section-number">8.</span> Termination</h2>
+                    <div class="terms-content-block">
+                        <p>
+                            Either party may terminate service agreements with 30 days written notice, subject to completion 
+                            of ongoing projects and payment of outstanding invoices.
+                        </p>
+                        <div class="termination-conditions">
+                            <h4>Immediate Termination</h4>
+                            <p>ZATB SDN BHD may immediately terminate services in cases of:</p>
+                            <ul>
+                                <li>Non-payment of invoices beyond agreed terms</li>
+                                <li>Breach of safety protocols or guidelines</li>
+                                <li>Violation of these terms of service</li>
+                                <li>Illegal or unethical conduct</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 9 -->
+                <div class="terms-section-item" id="governing-law">
+                    <h2><span class="section-number">9.</span> Governing Law</h2>
+                    <div class="terms-content-block">
+                        <p>
+                            These Terms of Service are governed by the laws of Malaysia. Any disputes arising from or 
+                            relating to these terms shall be subject to the exclusive jurisdiction of Malaysian courts.
+                        </p>
+                        <div class="dispute-resolution">
+                            <h4><i class="fas fa-handshake"></i> Dispute Resolution</h4>
+                            <p>
+                                We encourage resolution of disputes through direct communication. If necessary, disputes 
+                                may be resolved through mediation before proceeding to litigation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 10 -->
+                <div class="terms-section-item" id="contact-info">
+                    <h2><span class="section-number">10.</span> Contact Information</h2>
+                    <div class="terms-content-block">
+                        <p>
+                            For questions regarding these Terms of Service or to report violations, please contact us:
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-building"></i>
+                                <div>
+                                    <h4>ZATB SDN BHD</h4>
+                                    <p>Shah Alam Technology Park<br>Selangor, Malaysia</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>03-5124 7791</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>zain@zatb.com.my</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <h4>Website</h4>
+                                    <p>www.zatb.com.my</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Agreement Section -->
+        <div class="terms-agreement" data-aos="fade-up">
+            <div class="agreement-box">
+                <i class="fas fa-file-signature"></i>
+                <h3>Agreement Acknowledgment</h3>
+                <p>
+                    By using ZATB SDN BHD services, you acknowledge that you have read, understood, and agree to be bound 
+                    by these Terms of Service. These terms constitute the entire agreement between you and ZATB SDN BHD 
+                    regarding the use of our services.
+                </p>
+                <div class="agreement-actions">
+                    <a href="contact.html" class="btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Contact Us for Questions
+                    </a>
+                    <a href="privacy.html" class="btn-secondary">
+                        <i class="fas fa-eye"></i>
+                        View Privacy Policy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= RELATED LINKS SECTION ================= -->
+<section class="related-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Related <span class="highlight">Information</span></h2>
+            <p class="section-subtitle">Additional legal and company information</p>
+        </div>
+
+        <div class="related-grid">
+            <div class="related-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="related-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h3>Privacy Policy</h3>
+                <p>Learn how we collect, use, and protect your personal information and data privacy rights.</p>
+                <a href="privacy.html" class="related-link">Read Privacy Policy <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="related-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="related-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Certifications</h3>
+                <p>View our company certifications, quality standards, and professional accreditations.</p>
+                <a href="partners.html" class="related-link">View Certifications <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="related-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="related-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Contact Support</h3>
+                <p>Get in touch with our team for questions about services, terms, or technical support.</p>
+                <a href="contact.html" class="related-link">Contact Support <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3>ZATB <span>SDN BHD</span></h3>
+                        <p>Leading provider of fire safety and rescue equipment solutions across Malaysia.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Shah Alam Technology Park, Selangor</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>03-5124 7791</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>zain@zatb.com.my</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="supply.html">Supply & Procurement</a></li>
+                        <li><a href="installation.html">Installation Services</a></li>
+                        <li><a href="training.html">Training & Certification</a></li>
+                        <li><a href="service&maintenance.html">Maintenance & Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="partners.html">Our Partners</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <p>&copy; <span id="year"></span> ZATB SDN BHD. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Initialize Scripts -->
+<script>
+// Initialize AOS
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+});
+
+// Update footer year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Highlight active section in table of contents
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.terms-section-item');
+    const tocLinks = document.querySelectorAll('.toc-list a');
+    
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+        }
+    });
+});
+</script>
+
+<!-- TOGGLE MENU -->
+<script src="assets/main.js" defer></script>
+
+</body>
+</html>

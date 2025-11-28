@@ -126,5 +126,36 @@ navToggle.addEventListener('click', () => {
         });
     });
 
+    /* ===========================
+       PRODUCT FILTERING
+       =========================== */
+    window.filterProducts = function() {
+        const selectedBrand = document.getElementById('brandFilter').value;
+        const thumbnails = document.querySelectorAll('.product-thumbnail');
+        const cards = document.querySelectorAll('.product-card');
+        
+        // Handle thumbnail grid (legacy)
+        thumbnails.forEach(product => {
+            const productBrand = product.dataset.brand;
+            
+            if (selectedBrand === 'all' || productBrand === selectedBrand) {
+                product.classList.remove('hidden');
+            } else {
+                product.classList.add('hidden');
+            }
+        });
+        
+        // Handle service-style cards (new)
+        cards.forEach(product => {
+            const productBrand = product.dataset.brand;
+            
+            if (selectedBrand === 'all' || productBrand === selectedBrand) {
+                product.classList.remove('hidden');
+            } else {
+                product.classList.add('hidden');
+            }
+        });
+    };
+
 });
 
