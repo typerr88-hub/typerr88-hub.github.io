@@ -85,4 +85,5 @@ toggle.addEventListener("click", () => {
     // Update aria-expanded for accessibility
     const expanded = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", !expanded);
-});
+}
+
