@@ -79,8 +79,10 @@ const toggle = document.getElementById("nav-toggle");
 const nav = document.getElementById("site-nav");
 
 toggle.addEventListener("click", () => {
-    nav.classList.toggle("show");
+    nav.classList.toggle("show");      // Show/hide menu
+    toggle.classList.toggle("active"); // Animate hamburger
 
-    const expanded = toggle.getAttribute("aria-expanded") === "true" || false;
+    // Update aria-expanded for accessibility
+    const expanded = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", !expanded);
 });
