@@ -223,7 +223,7 @@ img {
 .contact-form {
     max-width: 100px;
     margin: auto;
-    display: flex;
+    display: grid;
     flex-direction: column;
 }
 
