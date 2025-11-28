@@ -122,11 +122,11 @@ img {
     text-transform: uppercase;
     font-size: 15px;
     transition: 0.3s;
-    color: #333;
+    color: #5e2a2a;
 }
 
 .site-nav a:hover {
-    color: #5e2a2a;
+    color: #ffcc00;
 }
 
 /* MOBILE TOGGLE BUTTON */
