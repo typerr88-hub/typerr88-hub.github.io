@@ -238,7 +238,7 @@ img {
 /* ===================== MOBILE ===================== */
 @media (max-width: 900px) {
 
-    .nav-toggle.show {
+    .nav-toggle {
         display: block;
     }
 
