@@ -53,9 +53,12 @@ img {
     border-radius: 0 0 0 12px;
 }
 
-.site-nav.nav-open {
+.header-inner {
     display: flex;
+    align-items: center;
+    justify-content: space-between;   /* pushes toggle to right */
 }
+
 
 .site-nav ul {
     list-style: none;
@@ -93,7 +96,7 @@ img {
     position: absolute;
     width: 28px;
     height: 3px;
-    background: #fff;
+    background: #666565;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.35s ease;
