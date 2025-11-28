@@ -37,7 +37,7 @@ img {
     top: 0;
     width: 100%;
     z-index: 9999;
-    background: #111;
+    background: #ffffff;
 }
 
 /* ---------- MOBILE NAV ---------- */
@@ -46,7 +46,7 @@ img {
     top: 70px;
     right: 0;
     width: 230px;
-    background: #111;
+    background: #ffffff;
     padding: 20px 0;
     display: none;
     flex-direction: column;
