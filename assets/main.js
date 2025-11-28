@@ -73,15 +73,14 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ===========================
        MOBILE MENU TOGGLE
        =========================== */
-    const navToggle = document.getElementById('nav-toggle');
-    const siteNav = document.getElementById('site-nav');
+   
 
-    if (navToggle && siteNav) {
-        navToggle.addEventListener('click', () => {
-            navToggle.classList.toggle('active');
-            siteNav.classList.toggle('open');
-            document.body.classList.toggle('menu-open');
-        });
-    }
+const toggle = document.getElementById("nav-toggle");
+const nav = document.getElementById("site-nav");
 
+toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+
+    const expanded = toggle.getAttribute("aria-expanded") === "true" || false;
+    toggle.setAttribute("aria-expanded", !expanded);
 });
