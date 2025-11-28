@@ -221,7 +221,7 @@ img {
 
 /* ===================== CONTACT ===================== */
 .contact-form {
-    max-width: 200px;
+    max-width: 100px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -238,7 +238,7 @@ img {
         position: absolute;
         top: 70px;
         left: 0;
-        width: 100%;
+        width: 80%;
         background: white;
         display: none;
         flex-direction: column;
