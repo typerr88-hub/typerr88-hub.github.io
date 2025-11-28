@@ -29,6 +29,7 @@ img {
 }
 
 /* ===================== HEADER ===================== */
+/* HEADER & NAV */
 .site-header {
     width: 100%;
     background: #fff;
@@ -37,7 +38,6 @@ img {
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .header-inner {
@@ -50,7 +50,6 @@ img {
 .brand {
     display: flex;
     flex-direction: column;
-    line-height: 1;
     font-weight: bold;
 }
 
@@ -61,11 +60,10 @@ img {
 
 .brand-sub {
     font-size: 11px;
-    letter-spacing: 1px;
     color: #222;
 }
 
-/* ===================== NAVIGATION ===================== */
+/* NAVIGATION */
 .site-nav ul {
     display: flex;
     gap: 25px;
@@ -77,13 +75,14 @@ img {
     text-transform: uppercase;
     font-size: 15px;
     transition: 0.3s;
+    color: #333;
 }
 
 .site-nav a:hover {
     color: #5e2a2a;
 }
 
-/* ===================== MOBILE MENU ===================== */
+/* MOBILE TOGGLE BUTTON */
 .nav-toggle {
     display: none;
     background: none;
@@ -116,7 +115,7 @@ img {
     top: 8px;
 }
 
-/* ===================== HAMBURGER ANIMATION ===================== */
+/* HAMBURGER ANIMATION */
 .nav-toggle.active .hamburger {
     background: transparent;
 }
@@ -130,6 +129,42 @@ img {
     transform: rotate(-45deg);
     top: 0;
 }
+
+/* ===================== MOBILE NAVIGATION ===================== */
+@media(max-width: 900px) {
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .site-nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+        z-index: 998;
+    }
+
+    .site-nav.show {
+        display: flex;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .site-nav a {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+}
+
 
 /* ===================== HERO SECTION ===================== */
 .hero-section {
