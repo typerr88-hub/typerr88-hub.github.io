@@ -29,145 +29,138 @@ img {
 }
 
 /* ===================== HEADER ===================== */
-/* HEADER & NAV */
+/* ==============================
+   GLOBAL NAVIGATION STYLES
+============================== */
 .site-header {
-    width: 100%;
-    background: #eae9e9;
-    padding: 18px 0;
-    border-bottom: 1px solid #eee;
     position: sticky;
     top: 0;
-    z-index: 999;
+    width: 100%;
+    z-index: 9999;
+    background: #111;
 }
 
-.header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.brand {
-    display: flex;
+/* ---------- MOBILE NAV ---------- */
+.site-nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 230px;
+    background: #111;
+    padding: 20px 0;
+    display: none;
     flex-direction: column;
-    font-weight: bold;
+    border-radius: 0 0 0 12px;
 }
 
-.brand-main {
-    font-size: 25px;
-    color: #5e2a2a;
-}
-
-.brand-sub {
-    font-size: 15px;
-    color: #5e2a2a;
-}
-
-/* FOOTER */
-.site-footer {
-    background: #5e2a2a;
-    color: #fff;
-    padding: 30px 0;
-    font-size: 14px;
-    text-align: center;
-}
-
-.site-footer a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.site-footer a:hover {
-    color: #ffcc00;
-}
-
-.footer-inner {
+.site-nav.nav-open {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
 }
 
-.footer-nav ul {
-    display: flex;
-    gap: 20px;
+.site-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-direction: column;
 }
 
-.footer-brand {
-    font-weight: 600;
-}
-
-/* MOBILE RESPONSIVE */
-@media(max-width: 600px) {
-    .footer-nav ul {
-        flex-direction: column;
-        gap: 8px;
-    }
-}
-
-
-/* NAVIGATION */
-.site-nav ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
+.site-nav li {
+    margin: 12px 20px;
 }
 
 .site-nav a {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 15px;
-    transition: 0.3s;
-    color: #5e2a2a;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.site-nav a:hover {
-    color: #ffcc00;
-}
 
-/* MOBILE TOGGLE BUTTON */
+/* ---------- HAMBURGER BUTTON ---------- */
 .nav-toggle {
-    display: none;
     background: none;
     border: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
     cursor: pointer;
+    z-index: 10000;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.35s ease;
 }
 
 .hamburger {
-    width: 27px;
-    height: 3px;
-    background: #333;
-    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.hamburger::before,
+.hamburger::before {
+    top: -8px;
+}
+
 .hamburger::after {
-    content: '';
-    width: 27px;
-    height: 3px;
-    background: #333;
-    position: absolute;
-    left: 0;
+    top: 8px;
 }
 
-.hamburger::before { top: -8px; }
-.hamburger::after { top: 8px; }
-
-/* Animate hamburger to X */
-.nav-toggle.active .hamburger { background: transparent; }
-.nav-toggle.active .hamburger::before { transform: rotate(45deg); top: 0; }
-.nav-toggle.active .hamburger::after { transform: rotate(-45deg); top: 0; }
-
-/* Mobile menu */
-@media(max-width: 900px) {
-    .nav-toggle { display: block; }
-    .site-nav { display: none; flex-direction: column; }
-    .site-nav.show { display: flex; }
+/* Animate into X */
+.nav-toggle.open .hamburger {
+    background: transparent;
 }
+
+.nav-toggle.open .hamburger::before {
+    top: 0;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.nav-toggle.open .hamburger::after {
+    top: 0;
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+
+/* ==============================
+   DESKTOP NAVIGATION
+============================== */
+@media (min-width: 900px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .site-nav {
+        position: static;
+        display: block !important;
+        background: transparent;
+        width: auto;
+        padding: 0;
+    }
+
+    .site-nav ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .site-nav li {
+        margin: 0;
+    }
+
+    .site-nav a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
 
 
 /* ===================== HERO SECTION ===================== */
