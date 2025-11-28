@@ -368,3 +368,31 @@ img {
         font-size: 17px;
     }
 }
+
+
+/* VIEW MORE BUTTON */
+.card-link {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #007bff;          /* blue button */
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.card-link:hover {
+    background: #005fcc;          /* darker blue */
+    transform: translateY(-3px);   /* slight lift */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* CLICK EFFECT */
+.card-link:active {
+    background: #004da3;
+    transform: translateY(0);
+    box-shadow: none;
+}
