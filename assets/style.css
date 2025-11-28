@@ -228,7 +228,7 @@ img {
 }
 
 /* ===================== MOBILE ===================== */
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
     .nav-toggle {
         display: block;
@@ -238,7 +238,7 @@ img {
         position: absolute;
         top: 70px;
         left: 0;
-        width: 200%;
+        width: 100%;
         background: white;
         display: none;
         flex-direction: column;
