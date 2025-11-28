@@ -137,26 +137,54 @@
     </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section contact-section">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>Fill in the form below. Your email app will open automatically.</p>
+<!-- CONTACT FORM -->
+<section class="form-section">
+	<div class="form-container">
 
-        <form id="contactForm" onsubmit="sendEmail(event)">
-            <label>Your Name</label>
-            <input type="text" id="name" required>
+		<h2 style="text-align:center;">Get in Touch</h2>
+		<p style="text-align:center; color:#555; margin-bottom:20px;">
+			Please fill in the form below. Your email app will open automatically.
+		</p>
 
-            <label>Your Email</label>
-            <input type="email" id="email" required>
+		<form id="contactForm" class="contact-form" onsubmit="sendEmail(event)">
 
-            <label>Message</label>
-            <textarea id="message" required></textarea>
+			<label>Your Name</label>
+			<input type="text" id="name" required>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
+			<label>Your Email</label>
+			<input type="email" id="email" required>
+
+			<label>Message</label>
+			<textarea id="message" required></textarea>
+
+			<button type="submit">Send Message</button>
+		</form>
+
+	</div>
 </section>
+
+
+
+<!-- EMAIL FUNCTION -->
+<script>
+function sendEmail(event) {
+	event.preventDefault();
+
+	let name = document.getElementById("name").value;
+	let email = document.getElementById("email").value;
+	let message = document.getElementById("message").value;
+
+	let subject = encodeURIComponent("New Inquiry from " + name);
+	let body = encodeURIComponent(
+		"Name: " + name + "\n" +
+		"Email: " + email + "\n\n" +
+		"Message:\n" + message
+	);
+
+	window.location.href = "mailto:zain@zatb.com.my?subject=" + subject + "&body=" + body;
+}
+</script>
+
 
 <!-- ================= FOOTER ================= -->
 <footer class="site-footer">
@@ -192,14 +220,7 @@ const swiper = new Swiper('.hero-swiper', {
     pagination: { el: '.swiper-pagination', clickable: true }
 });
 
-/* MOBILE NAVIGATION */
-const navToggle = document.getElementById("nav-toggle");
-const siteNav = document.getElementById("site-nav");
 
-navToggle.addEventListener("click", () => {
-    siteNav.classList.toggle("nav-open");
-    navToggle.classList.toggle("open");
-});
 </script>
 
 </body>
