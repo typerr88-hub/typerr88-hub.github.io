@@ -221,7 +221,7 @@ img {
 
 /* ===================== CONTACT ===================== */
 .contact-form {
-    max-width: 500px;
+    max-width: 200px;
     margin: auto;
     display: flex;
     flex-direction: column;
