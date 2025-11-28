@@ -339,8 +339,8 @@ img {
 
 /* SECONDARY BUTTON – outline */
 .btn-secondary {
-    border: 2px solid #636262;
-    color: #666666;
+    border: 2px solid #ffffff;
+    color: #0c0c0c;
 }
 
 .btn-secondary:hover {
