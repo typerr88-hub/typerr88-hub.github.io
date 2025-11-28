@@ -1,67 +1,87 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll('.hero-slide');
-
-function changeSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
-}
-
-let slideInterval = setInterval(changeSlide, 4000);
-
-slider.addEventListener('touchstart', () => clearInterval(slideInterval));
-slider.addEventListener('touchend', () => {
-    slideInterval = setInterval(changeSlide, 4000);
-});
-
-
-setInterval(changeSlide, 4000); // slide every 4 seconds
-
-
-let startX = 0;
-let endX = 0;
-
-const slider = document.querySelector('.hero-swiper');
-
-slider.addEventListener('touchstart', function(e) {
-    startX = e.touches[0].clientX;
-});
-
-slider.addEventListener('touchmove', function(e) {
-    endX = e.touches[0].clientX;
-});
-
-slider.addEventListener('touchend', function() {
-    if (startX - endX > 50) {
-        // Swipe left → next slide
-        nextSlide();
-    } else if (endX - startX > 50) {
-        // Swipe right → previous slide
-        prevSlide();
-    }
-});
-
-function nextSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
-}
-
-function prevSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    slides[currentSlide].classList.add('active');
-}
-
-
 document.addEventListener("DOMContentLoaded", () => {
 
-    const navToggle = document.getElementById('nav-toggle');
-const siteNav = document.getElementById('site-nav');
+    /* ===========================
+       HERO SLIDER
+       =========================== */
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slide');
+    const slider = document.querySelector('.hero-swiper');
+    let slideInterval;
 
-navToggle.addEventListener('click', () => {
-    navToggle.classList.toggle('active');
-    siteNav.classList.toggle('open');
-    document.body.classList.toggle('menu-open');
-});
+    // Start automatic sliding
+    function startAutoSlide() {
+        slideInterval = setInterval(changeSlide, 4000);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(slideInterval);
+    }
+
+    function changeSlide() {
+        if (slides.length === 0) return;
+
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    function prevSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    // Start autoplay
+    startAutoSlide();
+
+    /* ===========================
+       TOUCH SWIPE SUPPORT
+       =========================== */
+    if (slider) {
+
+        let startX = 0;
+        let endX = 0;
+
+        slider.addEventListener('touchstart', function (e) {
+            stopAutoSlide(); // pause when user touches
+            startX = e.touches[0].clientX;
+        });
+
+        slider.addEventListener('touchmove', function (e) {
+            endX = e.touches[0].clientX;
+        });
+
+        slider.addEventListener('touchend', function () {
+            const diff = startX - endX;
+
+            if (diff > 50) {
+                nextSlide(); // swipe left
+            } else if (diff < -50) {
+                prevSlide(); // swipe right
+            }
+
+            startAutoSlide(); // resume after swipe
+        });
+    }
+
+    /* ===========================
+       MOBILE MENU TOGGLE
+       =========================== */
+    const navToggle = document.getElementById('nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+
+    if (navToggle && siteNav) {
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            siteNav.classList.toggle('open');
+            document.body.classList.toggle('menu-open');
+        });
+    }
+
 });
