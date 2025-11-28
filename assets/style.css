@@ -37,7 +37,7 @@ img {
     top: 0;
     width: 100%;
     z-index: 9999;
-    background: #0f0e0e;
+    background: #ffffff;
 }
 
 /* ---------- MOBILE NAV ---------- */
@@ -72,8 +72,8 @@ img {
 }
 
 .site-nav a {
-    color: white;
-    text-decoration: none;
+    color: rgb(152, 29, 29);
+    text-decoration: arial rounded bold;
     font-size: 16px;
 }
 
