@@ -238,7 +238,7 @@ img {
         position: absolute;
         top: 70px;
         left: 0;
-        width: 80%;
+        width: 100%;
         background: white;
         display: none;
         flex-direction: column;
