@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
        MOBILE MENU TOGGLE
        =========================== */
    
-document.addEventListener("DOMContentLoaded", () => {
     // Get the toggle button and navigation menu
     const toggle = document.getElementById("nav-toggle");
     const nav = document.getElementById("site-nav");
