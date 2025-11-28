@@ -199,29 +199,7 @@ function sendEmail(event) {
     </div>
 </footer>
 
-<!-- ================= JS ================= -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script>
-/* YEAR */
-document.getElementById("year").textContent = new Date().getFullYear();
-
-/* EMAIL FUNCTION */
-function sendEmail(e) {
-    e.preventDefault();
-    window.location.href =
-        `mailto:typerr88@gmail.com?subject=Inquiry from ${name.value}&body=Name: ${name.value}%0AEmail: ${email.value}%0A%0A${message.value}`;
-}
-
-/* SWIPER */
-const swiper = new Swiper('.hero-swiper', {
-    loop: true,
-    autoplay: { delay: 3000 },
-    pagination: { el: '.swiper-pagination', clickable: true }
-});
-
-
-</script>
 
 </body>
 </html>
