@@ -74,21 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
        MOBILE MENU TOGGLE
        =========================== */
    
-    // Get the toggle button and navigation menu
-    const toggle = document.getElementById("nav-toggle");
-    const nav = document.getElementById("site-nav");
+   // MOBILE NAV TOGGLE
+const navToggle = document.getElementById('nav-toggle');
+const siteNav = document.getElementById('site-nav');
 
-    // When the toggle button is clicked
-    toggle.addEventListener("click", () => {
-        // Toggle the 'show' class on nav to show/hide menu
-        nav.classList.toggle("show");
+navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('open');
+    siteNav.classList.toggle('nav-open');
+});
 
-        // Toggle 'active' class on hamburger for animation
-        toggle.classList.toggle("active");
-
-        // Update aria-expanded for accessibility
-        const expanded = toggle.getAttribute("aria-expanded") === "true";
-        toggle.setAttribute("aria-expanded", !expanded);
-    });
 });
 
