@@ -3,82 +3,22 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Our Partners — ZATB Sdn Bhd</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Modern Corporate Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/style.css">
 
-    <style>
-        /* =============================
-           PARTNERS CARD SECTION
-        ============================== */
 
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            padding: 20px 0;
-        }
-
-        .card {
-            background: #ffffff;
-            border-radius: 10px;
-            padding: 18px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            transition: 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.16);
-        }
-
-        .card-img {
-            max-width: 160px;
-            width: 100%;
-            height: auto;
-            margin-bottom: 12px;
-            transition: transform .35s ease, filter .35s ease;
-        }
-
-        .card:hover .card-img {
-            transform: scale(1.12);
-            filter: drop-shadow(0 0 10px rgba(94, 42, 42, 0.45));
-        }
-
-        .card p {
-            font-size: 15px;
-            color: #333;
-            line-height: 1.4;
-        }
-
-        @media (hover: none) {
-            .card:hover,
-            .card:hover .card-img {
-                transform: none !important;
-                filter: none !important;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .card-img {
-                max-width: 130px;
-            }
-
-            .card {
-                padding: 15px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -113,103 +53,360 @@
 </header>
 
 
-<!-- HERO -->
-<section class="hero">
-    <div class="container hero-grid">
-        <div class="hero-content">
-            <h1 style="color: #5e2a2a; font-size: 28px; text-transform: uppercase;">OUR PARTNERS</h1>
-            <p class="lead">Discover our range of innovative products designed to help your business succeed.</p>
-        </div>
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+    <div class="page-hero-background">
+        <div class="page-hero-overlay"></div>
+        <img src="assets/images/menara-merdeka118.jpg" alt="Partners" class="page-hero-bg">
     </div>
-</section>
-
-
-<!-- PARTNERS SECTION -->
-<section class="section">
     <div class="container">
-        <h2 class="section-title">Featured Products</h2>
-        <p class="section-sub">Explore our top products that deliver exceptional value and performance.</p>
+        <div class="page-hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Trusted <span class="highlight">Partners</span></h1>
+            <p class="page-hero-subtitle">Working with world-class brands to deliver exceptional fire safety and rescue solutions</p>
+            <nav class="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                <span class="breadcrumb-current">Partners</span>
+            </nav>
+        </div>
+    </div>
+</section>
 
-        <div class="cards-grid">
+<!-- ================= PARTNERS INTRO ================= -->
+<section class="partners-intro-section">
+    <div class="container">
+        <div class="intro-grid">
+            <div class="intro-content" data-aos="fade-right">
+                <h2>Strategic <span class="highlight">Partnerships</span></h2>
+                <p class="intro-text">At ZATB SDN BHD, we collaborate with industry-leading manufacturers and technology providers to ensure our clients receive the highest quality fire safety and rescue equipment. Our strategic partnerships enable us to deliver cutting-edge solutions that meet international standards.</p>
+                <div class="intro-stats">
+                    <div class="intro-stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Global Partners</div>
+                    </div>
+                    <div class="intro-stat">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Years Partnership</div>
+                    </div>
+                    <div class="intro-stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Certified Products</div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-image" data-aos="fade-left">
+                <img src="assets/images/exhibition.jpeg" alt="Partnership Exhibition" class="intro-img">
+            </div>
+        </div>
+    </div>
+</section>
 
-            <article class="card">
-                <a href="https://www.draeger.com" target="_blank">
-                    <img src="assets/images/draegerlogo.png" class="card-img">
-                </a>
-                <p>PSS® AirBoss SCBA, NANO Cylinder, HPS® SafeGuard Helmet and more.</p>
-            </article>
+<!-- ================= FEATURED PARTNERS ================= -->
+<section class="partners-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Our <span class="highlight">Partners</span></h2>
+            <p class="section-subtitle">Trusted brands that power our comprehensive safety solutions</p>
+        </div>
 
-            <article class="card">
-                <a href="https://www.comptrade.at/en/index.html" target="_blank">
-                    <img src="assets/images/comptrade.png" class="card-img">
-                </a>
-                <p>High-pressure compressors and air supply systems.</p>
-            </article>
+        <div class="partners-grid">
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="partner-header">
+                    <div class="partner-logo-container">
+                        <img src="assets/images/draegerlogo.png" alt="Draeger" class="partner-logo">
+                    </div>
+                </div>
+                <div class="partner-content">
+                    <h3>Dräger</h3>
+                    <p class="partner-description">Global leader in medical and safety technology, providing innovative solutions for professional applications.</p>
+                    <div class="partner-products">
+                        <h4>Key Products:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> PSS® AirBoss SCBA</li>
+                            <li><i class="fas fa-check-circle"></i> NANO Cylinder Systems</li>
+                            <li><i class="fas fa-check-circle"></i> HPS® SafeGuard Helmets</li>
+                            <li><i class="fas fa-check-circle"></i> Gas Detection Equipment</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.draeger.com" target="_blank" class="partner-link">
+                        Visit Website <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
 
-            <article class="card">
-                <a href="https://www.waterax.com/en/home" target="_blank">
-                    <img src="assets/images/waterax.png" class="card-img">
-                </a>
-                <p>Lightweight portable pumps for wildland firefighters.</p>
-            </article>
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="partner-header">
+                    <div class="partner-logo-container">
+                        <img src="assets/images/comptrade.png" alt="Comptrade" class="partner-logo">
+                    </div>
+                </div>
+                <div class="partner-content">
+                    <h3>Comptrade</h3>
+                    <p class="partner-description">Austrian manufacturer specializing in high-pressure compressors and breathing air systems for professional use.</p>
+                    <div class="partner-products">
+                        <h4>Key Products:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> High-Pressure Compressors</li>
+                            <li><i class="fas fa-check-circle"></i> Breathing Air Systems</li>
+                            <li><i class="fas fa-check-circle"></i> Filtration Systems</li>
+                            <li><i class="fas fa-check-circle"></i> Mobile Compressor Units</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.comptrade.at/en/index.html" target="_blank" class="partner-link">
+                        Visit Website <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
 
-            <article class="card">
-                <a href="https://www.karenswood.com" target="_blank">
-                    <img src="assets/images/kare.png" class="card-img">
-                </a>
-                <p>Expert training for specialist search dogs.</p>
-            </article>
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="partner-header">
+                    <div class="partner-logo-container">
+                        <img src="assets/images/waterax.png" alt="Waterax" class="partner-logo">
+                    </div>
+                </div>
+                <div class="partner-content">
+                    <h3>Waterax</h3>
+                    <p class="partner-description">Canadian manufacturer of innovative wildland firefighting equipment and portable pumping solutions.</p>
+                    <div class="partner-products">
+                        <h4>Key Products:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Portable Fire Pumps</li>
+                            <li><i class="fas fa-check-circle"></i> Wildland Firefighting Equipment</li>
+                            <li><i class="fas fa-check-circle"></i> Water Delivery Systems</li>
+                            <li><i class="fas fa-check-circle"></i> Foam Proportioning Systems</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.waterax.com/en/home" target="_blank" class="partner-link">
+                        Visit Website <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
 
-            <article class="card">
-                <a href="https://www.willburt.com/index.html" target="_blank">
-                    <img src="assets/images/willburt.png" class="card-img">
-                </a>
-                <p>Industry-leading elevation & lighting systems.</p>
-            </article>
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="partner-header">
+                    <div class="partner-logo-container">
+                        <img src="assets/images/kare.png" alt="Karens Wood" class="partner-logo">
+                    </div>
+                </div>
+                <div class="partner-content">
+                    <h3>Karen's Wood</h3>
+                    <p class="partner-description">Specialist provider of search and rescue dog training programs and canine detection services.</p>
+                    <div class="partner-products">
+                        <h4>Key Services:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Search Dog Training</li>
+                            <li><i class="fas fa-check-circle"></i> Specialist Detection Programs</li>
+                            <li><i class="fas fa-check-circle"></i> K9 Handler Certification</li>
+                            <li><i class="fas fa-check-circle"></i> Rescue Training Equipment</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.karenswood.com" target="_blank" class="partner-link">
+                        Visit Website <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
 
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="partner-header">
+                    <div class="partner-logo-container">
+                        <img src="assets/images/willburt.png" alt="Will-Burt" class="partner-logo">
+                    </div>
+                </div>
+                <div class="partner-content">
+                    <h3>Will-Burt</h3>
+                    <p class="partner-description">Leading manufacturer of telescoping mast systems and mobile lighting solutions for emergency response.</p>
+                    <div class="partner-products">
+                        <h4>Key Products:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Telescoping Mast Systems</li>
+                            <li><i class="fas fa-check-circle"></i> Mobile Lighting Towers</li>
+                            <li><i class="fas fa-check-circle"></i> Emergency Response Equipment</li>
+                            <li><i class="fas fa-check-circle"></i> Communication Platforms</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.willburt.com/index.html" target="_blank" class="partner-link">
+                        Visit Website <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PARTNERSHIP BENEFITS ================= -->
+<section class="benefits-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Partnership <span class="highlight">Benefits</span></h2>
+            <p class="section-subtitle">Why our strategic alliances deliver superior value to our clients</p>
+        </div>
+        
+        <div class="benefits-grid">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Quality Assurance</h3>
+                <p>All partner products meet stringent international safety standards and certifications.</p>
+            </div>
+            
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Direct Support</h3>
+                <p>Access to manufacturer technical support and training resources for optimal performance.</p>
+            </div>
+            
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3>Reliable Supply</h3>
+                <p>Guaranteed product availability and fast delivery through established supply chains.</p>
+            </div>
+            
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="benefit-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Expert Installation</h3>
+                <p>Certified technicians trained by manufacturers ensure proper installation and setup.</p>
+            </div>
         </div>
     </div>
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= CTA SECTION ================= -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+            <h2>Interested in Our Partner Products?</h2>
+            <p>Contact us to learn more about our partner solutions and how they can benefit your organization</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Get Product Information
+                </a>
+                <a href="products.html" class="btn-secondary">
+                    <i class="fas fa-box"></i>
+                    View All Products
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
-    <div class="container footer-inner">
-        <div class="footer-brand">&reg; <span id="year"></span> ZATB SDN BHD</div>
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="privacy.html">Privacy</a></li>
-                <li><a href="terms.html">Terms</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3>ZATB <span>SDN BHD</span></h3>
+                        <p>Leading provider of fire safety and rescue equipment solutions across Malaysia.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Shah Alam Technology Park, Selangor</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>03-5124 7791</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>zain@zatb.com.my</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="supply.html">Supply & Procurement</a></li>
+                        <li><a href="installation.html">Installation Services</a></li>
+                        <li><a href="training.html">Training & Certification</a></li>
+                        <li><a href="service&maintenance.html">Maintenance & Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="partners.html">Our Partners</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="certifications">
+                        <h5>Certifications</h5>
+                        <div class="cert-logos">
+                            <img src="assets/images/ZATB - MOF 10.04.2023 - 31.05.2026-1.png" alt="MOF Certification" class="cert-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <p>&copy; <span id="year"></span> ZATB SDN BHD. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 
-<!-- FIXED MOBILE NAV TOGGLE -->
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Initialize Scripts -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+// Initialize AOS
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+});
 
-    const navToggle = document.getElementById("nav-toggle");
-    const siteNav = document.getElementById("site-nav");
+// Update footer year
+document.getElementById('year').textContent = new Date().getFullYear();
 
-    navToggle.addEventListener("click", () => {
-        navToggle.classList.toggle("active");
-        siteNav.classList.toggle("open");
-        document.body.classList.toggle("menu-open");
+// Mobile Navigation Toggle
+const navToggle = document.getElementById("nav-toggle");
+const siteNav = document.getElementById("site-nav");
+
+navToggle.addEventListener("click", () => {
+    navToggle.classList.toggle("active");
+    siteNav.classList.toggle("show");
+});
+
+// Close mobile menu when link is clicked
+const navLinks = document.querySelectorAll("#site-nav a");
+navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+        navToggle.classList.remove("active");
+        siteNav.classList.remove("show");
     });
-
-    // FIXED VERSION REQUESTED
-    var navLinks = document.querySelectorAll("#site-nav a");
-
-    navLinks.forEach(function (link) {
-        link.addEventListener("click", function () {
-            navToggle.classList.remove("active");
-            siteNav.classList.remove("open");
-            document.body.classList.remove("menu-open");
-        });
-    });
-
 });
 </script>
 

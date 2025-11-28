@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ZATB Sdn Bhd — Professional Fire & Rescue Solutions</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Modern Corporate Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Your Main CSS -->
     <link rel="stylesheet" href="assets/style.css">
@@ -47,319 +53,474 @@
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- ================= HERO SECTION ================= -->
 <section class="hero-section">
-
-    <div class="swiper hero-swiper">
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide hero-slide">
-                <img src="assets/images/draeger2.png" class="hero-img" alt="Draeger">
-                <img src="assets/images/draegerlogo.png" class="hero-logo">
+    <div class="hero-background">
+        <div class="hero-overlay"></div>
+        
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero-slide">
+                    <img src="assets/images/draeger2.png" class="hero-img" alt="Draeger">
+                </div>
+                <div class="swiper-slide hero-slide">
+                    <img src="assets/images/watson12.jpg" class="hero-img">
+                </div>
+                <div class="swiper-slide hero-slide">
+                    <img src="assets/images/Compressor.jpg" class="hero-img">
+                </div>
+                <div class="swiper-slide hero-slide">
+                    <img src="assets/images/pssairboss.png" class="hero-img">
+                </div>
+                <div class="swiper-slide hero-slide">
+                    <img src="assets/images/willburtnight.jpg" class="hero-img">
+                </div>
+                <div class="swiper-slide hero-slide">
+                    <img src="assets/images/karenswood2.png" class="hero-img">
+                </div>
+                <div class="swiper-slide hero-slide">
+                    <img src="assets/images/menara-merdeka118.jpg" class="hero-img" alt="Menara Merdeka 118">
+                </div>
             </div>
-
-            <div class="swiper-slide hero-slide">
-                <img src="assets/images/watson12.jpg" class="hero-img">
-                <img src="assets/images/waterax.png" class="hero-logo">
-            </div>
-
-            <div class="swiper-slide hero-slide">
-                <img src="assets/images/Compressor.jpg" class="hero-img">
-                <img src="assets/images/comptrade.png" class="hero-logo">
-            </div>
-
-            <div class="swiper-slide hero-slide">
-                <img src="assets/images/pssairboss.png" class="hero-img">
-                <img src="assets/images/draegerlogo.png" class="hero-logo">
-            </div>
-
-            <div class="swiper-slide hero-slide">
-                <img src="assets/images/willburtnight.jpg" class="hero-img">
-                <img src="assets/images/willburt.png" class="hero-logo">
-            </div>
-
-            <div class="swiper-slide hero-slide">
-                <img src="assets/images/karenswood2.png" class="hero-img">
-                <img src="assets/images/kare.png" class="hero-logo">
-            </div>
-
+            <div class="swiper-pagination"></div>
         </div>
-
-        <div class="swiper-pagination"></div>
-    </div>
-
-    <div class="hero-text container">
-        <h1>ZATB SDN BHD</h1>
-        <p>
-            Our principal activities are geared towards different sectors and industries with a keen desire
-            to provide the most comprehensive and reliable Fire and Rescue Equipment to protect lives and properties.
-        </p>
-
-        <div class="hero-buttons">
-            <a class="btn-primary" href="contact.html">Get in touch</a>
-            <a class="btn-secondary" href="services.html">Our Services</a>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>Leading Fire & Rescue <span class="highlight">Solutions</span></h1>
+                    <p class="hero-subtitle">Professional equipment and comprehensive safety solutions for industries across Malaysia</p>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Certified Safety</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Expert Installation</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <span>Professional Training</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a class="btn-primary" href="contact.html">
+                            <i class="fas fa-phone"></i>
+                            Get Quote
+                        </a>
+                        <a class="btn-secondary" href="services.html">
+                            <i class="fas fa-arrow-right"></i>
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
 </section>
 
-<!-- ================= WHAT WE OFFER ================= -->
-<section class="section">
+<!-- ================= STATS SECTION ================= -->
+<section class="stats-section">
     <div class="container">
-        <h2 class="section-title">What We Offer</h2>
-        <p class="section-sub">Comprehensive and reliable solutions for your organization.</p>
-
-        <div class="cards-grid">
-            <article class="card">
-                <h3>Supply</h3>
-                <p>Certified and reliable products that meet international safety standards.</p>
-                <a href="supply.html" class="card-link">View More</a>
-            </article>
-
-            <article class="card">
-                <h3>Installation</h3>
-                <p>Professional installation of pumps, breathing apparatus systems, detection units, and rescue systems.</p>
-                <a href="installation.html" class="card-link">View More</a>
-            </article>
-
-            <article class="card">
-                <h3>Training</h3>
-                <p>Hands-on technical training and troubleshooting for all equipment supplied.</p>
-                <a href="training.html" class="card-link">View More</a>
-            </article>
-
-            <article class="card">
-                <h3>Service & Maintenance</h3>
-                <p>Reliable after-sales support, servicing, and preventive maintenance.</p>
-                <a href="service&maintenance.html" class="card-link">View More</a>
-            </article>
+        <div class="stats-grid" data-aos="fade-up" data-aos-duration="800">
+            <div class="stat-item">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Corporate Clients</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Support Available</div>
+            </div>
         </div>
     </div>
 </section>
 
-    <!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- ================= SERVICES SECTION ================= -->
+<section class="services-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+            <p class="section-subtitle">Comprehensive fire safety and rescue solutions tailored for your industry</p>
+        </div>
 
-	<!-- Main stylesheet -->
-	<link rel="stylesheet" href="assets/style.css">
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3>Supply & Procurement</h3>
+                <p>Certified and reliable products that meet international safety standards with full compliance documentation.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> International Standards</li>
+                    <li><i class="fas fa-check"></i> Quality Assurance</li>
+                    <li><i class="fas fa-check"></i> Fast Delivery</li>
+                </ul>
+                <a href="supply.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
 
-	<style>
-		/* Contact section layout */
-		.contact-section {
-			padding: 60px 20px;
-			background: #f5f5f5;
-		}
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Installation Services</h3>
+                <p>Professional installation of pumps, breathing apparatus systems, detection units, and rescue systems.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Expert Technicians</li>
+                    <li><i class="fas fa-check"></i> Safety Compliance</li>
+                    <li><i class="fas fa-check"></i> Post-Installation Testing</li>
+                </ul>
+                <a href="installation.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
 
-		.contact-inner {
-			max-width: 1000px;
-			margin: auto;
-		}
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Training & Certification</h3>
+                <p>Hands-on technical training and troubleshooting for all equipment supplied with certification programs.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Certified Instructors</li>
+                    <li><i class="fas fa-check"></i> Practical Training</li>
+                    <li><i class="fas fa-check"></i> Official Certificates</li>
+                </ul>
+                <a href="training.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
 
-		.contact-row {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 30px;
-			margin-top: 20px;
-		}
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-icon">
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <h3>Maintenance & Support</h3>
+                <p>Reliable after-sales support, servicing, and preventive maintenance programs for optimal performance.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> 24/7 Support</li>
+                    <li><i class="fas fa-check"></i> Preventive Maintenance</li>
+                    <li><i class="fas fa-check"></i> Emergency Response</li>
+                </ul>
+                <a href="service&maintenance.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
 
-		.contact-details {
-			flex: 1;
-			min-width: 260px;
-		}
+<!-- ================= ABOUT SECTION ================= -->
+<section class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content" data-aos="fade-right">
+                <h2>Why Choose <span class="highlight">ZATB SDN BHD</span></h2>
+                <p class="about-intro">With over two decades of experience in fire safety and rescue equipment, we are Malaysia's trusted partner for comprehensive safety solutions.</p>
+                
+                <div class="about-points">
+                    <div class="point-item">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <h4>Industry Expertise</h4>
+                            <p>Specialized knowledge across multiple sectors including industrial, commercial, and government facilities.</p>
+                        </div>
+                    </div>
+                    <div class="point-item">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h4>Certified Partners</h4>
+                            <p>Official partnerships with leading international brands and compliance with Malaysian safety standards.</p>
+                        </div>
+                    </div>
+                    <div class="point-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Rapid Response</h4>
+                            <p>Quick deployment and 24/7 emergency support to ensure your operations never stop.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Contact Us Today
+                </a>
+            </div>
+            
+            <div class="about-image" data-aos="fade-left">
+                <img src="assets/images/menara-merdeka118.jpg" alt="ZATB Projects" class="about-img">
+                <div class="image-overlay">
+                    <div class="overlay-content">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Watch Our Story</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-		.contact-details p {
-			line-height: 1.6;
-		}
+<!-- ================= PARTNERS SECTION ================= -->
+<section class="partners-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Trusted <span class="highlight">Partners</span></h2>
+            <p class="section-subtitle">Working with industry-leading brands to deliver excellence</p>
+        </div>
 
-		.contact-map {
-			flex: 2;
-			min-width: 280px;
-		}
+        <div class="partners-grid">
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="partner-icon">
+                    <img src="assets/images/draegerlogo.png" alt="Draeger" class="partner-logo">
+                </div>
+                <h3>Dräger</h3>
+                <p>Global leader in medical and safety technology, providing innovative solutions for professional applications.</p>
+                <ul class="partner-features">
+                    <li><i class="fas fa-check"></i> PSS® AirBoss SCBA</li>
+                    <li><i class="fas fa-check"></i> Gas Detection Equipment</li>
+                    <li><i class="fas fa-check"></i> Safety Helmets</li>
+                </ul>
+                <a href="partners.html" class="partner-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
 
-		iframe {
-			width: 100%;
-			height: 330px;
-			border: 0;
-			border-radius: 12px;
-		}
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="partner-icon">
+                    <img src="assets/images/waterax.png" alt="Waterax" class="partner-logo">
+                </div>
+                <h3>Waterax</h3>
+                <p>Canadian manufacturer of innovative wildland firefighting equipment and portable pumping solutions.</p>
+                <ul class="partner-features">
+                    <li><i class="fas fa-check"></i> Portable Fire Pumps</li>
+                    <li><i class="fas fa-check"></i> Wildland Equipment</li>
+                    <li><i class="fas fa-check"></i> Water Delivery Systems</li>
+                </ul>
+                <a href="partners.html" class="partner-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
 
-		/* Contact Form Area */
-		.form-section {
-			background: #c0bdbd;
-			padding: 60px 20px;
-			margin-top: 0;
-		}
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="partner-icon">
+                    <img src="assets/images/comptrade.png" alt="Comptrade" class="partner-logo">
+                </div>
+                <h3>Comptrade</h3>
+                <p>Austrian manufacturer specializing in high-pressure compressors and breathing air systems.</p>
+                <ul class="partner-features">
+                    <li><i class="fas fa-check"></i> High-Pressure Compressors</li>
+                    <li><i class="fas fa-check"></i> Breathing Air Systems</li>
+                    <li><i class="fas fa-check"></i> Filtration Systems</li>
+                </ul>
+                <a href="partners.html" class="partner-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
 
-		.form-container {
-			max-width: 600px;
-			margin: auto;
-			background: white;
-			padding: 30px;
-			border-radius: 12px;
-			box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-		}
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="partner-icon">
+                    <img src="assets/images/willburt.png" alt="Will-Burt" class="partner-logo">
+                </div>
+                <h3>Will-Burt</h3>
+                <p>Leading manufacturer of telescoping mast systems and mobile lighting solutions for emergency response.</p>
+                <ul class="partner-features">
+                    <li><i class="fas fa-check"></i> Telescoping Mast Systems</li>
+                    <li><i class="fas fa-check"></i> Mobile Lighting Towers</li>
+                    <li><i class="fas fa-check"></i> Emergency Equipment</li>
+                </ul>
+                <a href="partners.html" class="partner-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
 
-		.contact-form label {
-			font-weight: 600;
-			margin-top: 10px;
-		}
-
-		.contact-form input,
-		.contact-form textarea {
-			width: 100%;
-			padding: 12px;
-			margin-top: 8px;
-			border-radius: 8px;
-			border: 1px solid #bbb;
-			font-size: 16px;
-		}
-
-		.contact-form textarea {
-			height: 140px;
-			resize: none;
-		}
-
-		.contact-form button {
-			margin-top: 20px;
-			padding: 12px;
-			background: #5e2a2a;
-			color: white;
-			border: none;
-			border-radius: 8px;
-			width: 100%;
-			font-size: 18px;
-			cursor: pointer;
-			transition: 0.3s;
-		}
-
-		.contact-form button:hover {
-			background: #7c3b3b;
-		}
-
-		/* Mobile Optimization */
-		@media (max-width: 700px) {
-			.contact-row {
-				flex-direction: column;
-			}
-		}
-	</style>
-</head>
-
-<body>
-
-    <!-- HEADER -->
-<header class="site-header">
-    
-<!-- CONTACT INFORMATION + MAP -->
-<section class="contact-section">
-	<div class="contact-inner">
-
-		<h2 style="font-size: 32px; font-weight: 700;">Contact Us</h2>
-		<p style="font-size: 18px;">Feel free to reach out to us for any inquiries or assistance.</p>
-
-		<div class="contact-row">
-
-			<div class="contact-details">
-				<h3 style="font-size: 22px; font-weight: 600;">ZATB SDN BHD</h3>
-
-				<p>
-					Address:<br>
-					No. 64 Jalan Tambur, 33/19,<br>
-					Shah Alam Technology Park,<br>
-					Seksyen 33, 40400 Shah Alam,<br>
-					Selangor Darul Ehsan.
-				</p>
-
-				<p><strong>Office No:</strong> 03-5124 7791</p>
-				<p><strong>Fax No:</strong> 03-5124 7790</p>
-				<p><strong>Email:</strong> zain@zatb.com.my</p>
-			</div>
-
-			<div class="contact-map">
-				<iframe 
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127.94494794221106!2d101.54482!3d3.0228343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb2b8f8b66d35%3A0x7272dc515ff185d1!2sZatb%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1700000000000"
-					allowfullscreen=""
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade">
-				</iframe>
-			</div>
-
-		</div>
-	</div>
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="partner-icon">
+                    <img src="assets/images/kare.png" alt="Karen's Wood" class="partner-logo">
+                </div>
+                <h3>Karen's Wood</h3>
+                <p>Specialist provider of search and rescue dog training programs and canine detection services.</p>
+                <ul class="partner-features">
+                    <li><i class="fas fa-check"></i> Search Dog Training</li>
+                    <li><i class="fas fa-check"></i> K9 Handler Certification</li>
+                    <li><i class="fas fa-check"></i> Detection Programs</li>
+                </ul>
+                <a href="partners.html" class="partner-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
 </section>
 
 
 
-<!-- CONTACT FORM -->
-<section class="form-section">
-	<div class="form-container">
-
-		<h2 style="text-align:center;">Get in Touch</h2>
-		<p style="text-align:center; color:#555; margin-bottom:20px;">
-			Please fill in the form below. Your email app will open automatically.
-		</p>
-
-		<form id="contactForm" class="contact-form" onsubmit="sendEmail(event)">
-
-			<label>Your Name</label>
-			<input type="text" id="name" required>
-
-			<label>Your Email</label>
-			<input type="email" id="email" required>
-
-			<label>Message</label>
-			<textarea id="message" required></textarea>
-
-			<button type="submit">Send Message</button>
-		</form>
-
-	</div>
+<!-- ================= CTA SECTION ================= -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+            <h2>Ready to Secure Your Facility?</h2>
+            <p>Get professional fire safety consultation and customized solutions for your business</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Get Free Consultation
+                </a>
+                <a href="tel:+60351247791" class="btn-secondary">
+                    <i class="fas fa-phone-alt"></i>
+                    Call: 03-5124 7791
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
 
-
-
-<!-- EMAIL FUNCTION -->
-<script>
-function sendEmail(event) {
-	event.preventDefault();
-
-	let name = document.getElementById("name").value;
-	let email = document.getElementById("email").value;
-	let message = document.getElementById("message").value;
-
-	let subject = encodeURIComponent("New Inquiry from " + name);
-	let body = encodeURIComponent(
-		"Name: " + name + "\n" +
-		"Email: " + email + "\n\n" +
-		"Message:\n" + message
-	);
-
-	window.location.href = "mailto:zain@zatb.com.my?subject=" + subject + "&body=" + body;
-}
-</script>
-
-
-
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
-    <div class="container footer-inner">
-        <div class="footer-brand">&copy; <span id="year"></span> ZATB SDN BHD</div>
-
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="privacy.html">Privacy</a></li>
-                <li><a href="terms.html">Terms</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3>ZATB <span>SDN BHD</span></h3>
+                        <p>Leading provider of fire safety and rescue equipment solutions across Malaysia.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Shah Alam Technology Park, Selangor</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>03-5124 7791</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>zain@zatb.com.my</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="supply.html">Supply & Procurement</a></li>
+                        <li><a href="installation.html">Installation Services</a></li>
+                        <li><a href="training.html">Training & Certification</a></li>
+                        <li><a href="service&maintenance.html">Maintenance & Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="partners.html">Our Partners</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <p>&copy; <span id="year"></span> ZATB SDN BHD. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 
 
 
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Scripts -->
+<script>
+// Initialize AOS
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+});
+
+// Hero Swiper
+const heroSwiper = new Swiper('.hero-swiper', {
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    speed: 1000,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+});
+
+// Partners Swiper
+const partnersSwiper = new Swiper('.partners-swiper', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    speed: 600,
+    slidesPerView: 2,
+    spaceBetween: 30,
+    breakpoints: {
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+        },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 60,
+        },
+    },
+});
+
+// Update footer year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+</script>
+
 <!-- TOGGLE MENU -->
-<script src="assets/script.js" defer></script>
+<script src="assets/main.js" defer></script>
 
 </body>
 </html>

@@ -6,108 +6,19 @@
 	<title>Our Products — ZATB Sdn Bhd</title>
 	<meta name="description" content="Explore the products offered by ZATB Sdn Bhd." />
 
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<!-- Google Fonts - Modern Corporate Typography -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<!-- AOS Animation Library -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- Main stylesheet -->
 	<link rel="stylesheet" href="assets/style.css">
 
-	<style>
-		/* ------------ PRODUCT PAGE CLEAN CSS ------------- */
 
-		.product-container {
-			max-width: 1200px;
-			margin: 40px auto;
-			padding: 20px;
-			background: #fff;
-			border-radius: 12px;
-			box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-		}
-
-		.product-header {
-			text-align: center;
-			margin-bottom: 35px;
-		}
-
-		.product-header h1 {
-			color: #5e2a2a;
-			font-size: 34px;
-			font-weight: bold;
-		}
-
-		.product-header p {
-			color: #444;
-			font-size: 17px;
-		}
-
-		/* Brand dropdown */
-		.brand-filter select {
-			padding: 10px;
-			border-radius: 8px;
-			border: 1px solid #bbb;
-			font-size: 15px;
-			cursor: pointer;
-			margin-top: 10px;
-		}
-
-		/* Product grid */
-		.product-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-			gap: 25px;
-		}
-
-		.product-card {
-			background: #fafafa;
-			border-radius: 12px;
-			box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-			overflow: hidden;
-			transition: .3s ease;
-		}
-
-		.product-card:hover {
-			transform: translateY(-6px);
-			box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-		}
-
-		.product-card img {
-			width: 100%;
-			height: 160px;
-			object-fit: cover;
-		}
-
-		.product-info {
-			padding: 20px;
-		}
-
-		.product-info h3 {
-			color: #5e2a2a;
-			font-size: 20px;
-			margin-bottom: 8px;
-		}
-
-		.product-info p {
-			font-size: 15px;
-			color: #333;
-			line-height: 1.5;
-		}
-
-		.product-info a {
-			display: inline-block;
-			margin-top: 12px;
-			padding: 8px 16px;
-			background: #5e2a2a;
-			color: #fff;
-			border-radius: 8px;
-			text-decoration: none;
-			font-size: 15px;
-		}
-
-		.product-info a:hover {
-			background: #7a3a3a;
-		}
-	</style>
 
 </head>
 
@@ -142,140 +53,345 @@
     </div>
 </header>
 
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+    <div class="page-hero-background">
+        <div class="page-hero-overlay"></div>
+        <img src="assets/images/menara-merdeka118.jpg" alt="Products" class="page-hero-bg">
+    </div>
+    <div class="container">
+        <div class="page-hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Our <span class="highlight">Products</span></h1>
+            <p class="page-hero-subtitle">High-quality fire safety and rescue equipment from world-leading manufacturers</p>
+            <nav class="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                <span class="breadcrumb-current">Products</span>
+            </nav>
+        </div>
+    </div>
+</section>
 
+<!-- ================= PRODUCTS INTRO ================= -->
+<section class="products-intro-section">
+    <div class="container">
+        <div class="intro-grid">
+            <div class="intro-content" data-aos="fade-right">
+                <h2>Premium <span class="highlight">Equipment</span></h2>
+                <p class="intro-text">ZATB SDN BHD provides comprehensive fire safety and rescue equipment from globally recognized manufacturers. Our product range covers everything from breathing apparatus and firefighting equipment to specialized rescue tools and detection systems.</p>
+                <div class="intro-stats">
+                    <div class="intro-stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Product Lines</div>
+                    </div>
+                    <div class="intro-stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Partner Brands</div>
+                    </div>
+                    <div class="intro-stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Certified Quality</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
 
+<!-- ================= PRODUCT OPTIONS ================= -->
+<section class="product-options-section">
+    <div class="container">
+        <div class="options-bar" data-aos="fade-up">
+            <div class="options-left">
+                <h3>Our Product Catalog</h3>
+                <p>Browse equipment by manufacturer</p>
+            </div>
+            <div class="options-right">
+                <select id="brandSelect" class="brand-select">
+                    <option value="all">All Brands</option>
+                    <option value="draeger">Dräger</option>
+                    <option value="waterax">Waterax</option>
+                    <option value="comptrade">Comptrade</option>
+                    <option value="willburt">Will-Burt</option>
+                    <option value="karenswood">Karen's Wood</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
 
-<main>
+<!-- ================= PRODUCTS GRID ================= -->
+<section class="products-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Featured <span class="highlight">Products</span></h2>
+            <p class="section-subtitle">Explore our comprehensive range of safety and rescue equipment</p>
+        </div>
 
-<!-- ================= PRODUCT CONTENT ================= -->
-<div class="product-container">
+        <div class="products-thumbnail-grid" id="productGrid">
+            <!-- DRAEGER PRODUCTS -->
+            <div class="product-thumbnail" data-brand="draeger" data-aos="fade-up" data-aos-delay="100">
+                <div class="thumbnail-box">
+                    <div class="thumbnail-image">
+                        <img src="assets/images/proair.png" alt="BG ProAir" class="product-img">
+                        <div class="brand-tag">Dräger</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h4>Dräger BG ProAir</h4>
+                        <p class="product-type">Breathing Apparatus</p>
+                        <a href="assets/pdf/bgproair.pdf" download class="download-btn">
+                            <i class="fas fa-download"></i> PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-	<div class="product-header">
-		<h1>Our Products</h1>
-		<p>High-quality fire & rescue equipment supplied by ZATB Sdn Bhd</p>
+            <div class="product-thumbnail" data-brand="draeger" data-aos="fade-up" data-aos-delay="150">
+                <div class="thumbnail-box">
+                    <div class="thumbnail-image">
+                        <img src="assets/images/pss air boss.png" alt="AirBoss" class="product-img">
+                        <div class="brand-tag">Dräger</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h4>Dräger PSS AirBoss</h4>
+                        <p class="product-type">Safety System</p>
+                        <a href="assets/pdf/pss-airboss.pdf" download class="download-btn">
+                            <i class="fas fa-download"></i> PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-		<!-- DROPDOWN FILTER -->
-		<div class="brand-filter">
-			<label><strong>Select Brand:</strong></label>
-			<select id="brandSelect">
-				<option value="all">All Brands</option>
-				<option value="draeger">Draeger</option>
-				<option value="waterax">Waterax</option>
-				<option value="comptrade">Comptrade</option>
-				<option value="willburt">Willburt</option>
-				<option value="karenswood">Karenswood International Ltd</option>
-			</select>
-		</div>
-	</div>
+            <!-- WATERAX PRODUCTS -->
+            <div class="product-thumbnail" data-brand="waterax" data-aos="fade-up" data-aos-delay="200">
+                <div class="thumbnail-box">
+                    <div class="thumbnail-image">
+                        <img src="assets/images/watson.png" alt="Watson Pump" class="product-img">
+                        <div class="brand-tag">Waterax</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h4>MARK-3® Watson Edition</h4>
+                        <p class="product-type">Fire Pump</p>
+                        <a href="assets/pdf/watson-brochure.pdf" download class="download-btn">
+                            <i class="fas fa-download"></i> PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+            <!-- COMPTRADE PRODUCTS -->
+            <div class="product-thumbnail" data-brand="comptrade" data-aos="fade-up" data-aos-delay="250">
+                <div class="thumbnail-box">
+                    <div class="thumbnail-image">
+                        <img src="assets/images/Compressor.jpg" alt="Comptrade Compressor" class="product-img">
+                        <div class="brand-tag">Comptrade</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h4>Comptrade Compressors</h4>
+                        <p class="product-type">Air Compressor</p>
+                        <a href="assets/pdf/CT_Brochure.pdf" download class="download-btn">
+                            <i class="fas fa-download"></i> PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+            <!-- WILLBURT PRODUCTS -->
+            <div class="product-thumbnail" data-brand="willburt" data-aos="fade-up" data-aos-delay="300">
+                <div class="thumbnail-box">
+                    <div class="thumbnail-image">
+                        <img src="assets/images/lightmast1.jpg" alt="Willburt Lightmast" class="product-img">
+                        <div class="brand-tag">Will-Burt</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h4>Will-Burt Towers</h4>
+                        <p class="product-type">Lighting System</p>
+                        <a href="assets/pdf/Night Scan Light Towers.pdf" download class="download-btn">
+                            <i class="fas fa-download"></i> PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-	<!-- GRID START (ALL CARDS INSIDE THIS ONE GRID ONLY) -->
-	<div class="product-grid" id="productGrid">
+            <!-- KARENSWOOD PRODUCTS -->
+            <div class="product-thumbnail" data-brand="karenswood" data-aos="fade-up" data-aos-delay="350">
+                <div class="thumbnail-box">
+                    <div class="thumbnail-image">
+                        <img src="assets/images/kare.png" alt="Karenswood Dogs" class="product-img">
+                        <div class="brand-tag">Karen's Wood</div>
+                    </div>
+                    <div class="thumbnail-info">
+                        <h4>Karenswood Dogs</h4>
+                        <p class="product-type">Detection Dogs</p>
+                        <a href="assets/pdf/Karenswood (International) Ltd.pdf" download class="download-btn">
+                            <i class="fas fa-download"></i> PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-		<!-- DRAEGER -->
-		<div class="product-card" data-brand="draeger">
-			<img src="assets/images/proair.png" alt="BG ProAir">
-			<div class="product-info">
-				<h3>Dräger BG ProAir</h3>
-				<p>Positive pressure closed circuit breathing apparatus with superior safety and comfort.</p>
-				<a href="assets/pdf/bgproair.pdf" download>Download PDF</a>
-			</div>
-		</div>
+<!-- ================= CTA SECTION ================= -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+            <h2>Need More Product Information?</h2>
+            <p>Contact our team for detailed specifications, pricing, and custom solutions tailored to your needs</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Contact Our Team
+                </a>
+                <a href="partners.html" class="btn-secondary">
+                    <i class="fas fa-handshake"></i>
+                    View Our Partners
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-		<div class="product-card" data-brand="draeger">
-			<img src="assets/images/pss air boss.png" alt="AirBoss">
-			<div class="product-info">
-				<h3>Dräger PSS AirBoss</h3>
-				<p>One of the lightest breathing apparatus systems with superior ergonomics.</p>
-				<a href="assets/pdf/pss-airboss.pdf" download>Download PDF</a>
-			</div>
-		</div>
-
-
-		<!-- WATERAX -->
-		<div class="product-card" data-brand="waterax">
-			<img src="assets/images/watson.png" alt="Watson Pump">
-			<div class="product-info">
-				<h3>MARK-3® Watson Edition</h3>
-				<p>High-pressure fire pump built for rugged operational performance.</p>
-				<a href="assets/pdf/watson-brochure.pdf" download>Download PDF</a>
-			</div>
-		</div>
-
-
-		<!-- COMPTRADE -->
-		<div class="product-card" data-brand="comptrade">
-			<img src="assets/images/Compressor.jpg" alt="Comptrade Compressor">
-			<div class="product-info">
-				<h3>Comptrade Compressors</h3>
-				<p>High pressure and breathing air compressor solutions.</p>
-				<a href="assets/pdf/CT_Brochure.pdf" download>Download PDF</a>
-			</div>
-		</div>
-
-
-		<!-- WILLBURT -->
-		<div class="product-card" data-brand="willburt">
-			<img src="assets/images/lightmast1.jpg" alt="Willburt Lightmast">
-			<div class="product-info">
-				<h3>Willburt Towers</h3>
-				<p>Telescopic mast and lighting tower systems.</p>
-				<a href="assets/pdf/Night Scan Light Towers.pdf" download>Download PDF</a>
-			</div>
-		</div>
-
-
-		<!-- KARENSWOOD -->
-		<div class="product-card" data-brand="karenswood">
-			<img src="assets/images/kare.png" alt="Karenswood Dogs">
-			<div class="product-info">
-				<h3>Karenswood Dogs</h3>
-				<p>Specialist trained detection & rescue dogs.</p>
-				<a href="assets/pdf/Karenswood (International) Ltd.pdf" download>Download PDF</a>
-			</div>
-		</div>
-
-	</div> <!-- END PRODUCT GRID -->
-
-</div>
-
-</main>
-
-
-
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
-	<div class="container footer-inner">
-		<div class="footer-brand">&copy; <span id="year"></span> ZATB SDN BHD</div>
-		<nav class="footer-nav">
-			<ul>
-				<li><a href="privacy.html">Privacy</a></li>
-				<li><a href="terms.html">Terms</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</div>
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3>ZATB <span>SDN BHD</span></h3>
+                        <p>Leading provider of fire safety and rescue equipment solutions across Malaysia.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Shah Alam Technology Park, Selangor</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>03-5124 7791</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>zain@zatb.com.my</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="supply.html">Supply & Procurement</a></li>
+                        <li><a href="installation.html">Installation Services</a></li>
+                        <li><a href="training.html">Training & Certification</a></li>
+                        <li><a href="service&maintenance.html">Maintenance & Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="partners.html">Our Partners</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="certifications">
+                        <h5>Certifications</h5>
+                        <div class="cert-logos">
+                            <img src="assets/images/ZATB - MOF 10.04.2023 - 31.05.2026-1.png" alt="MOF Certification" class="cert-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <p>&copy; <span id="year"></span> ZATB SDN BHD. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<!-- Main JavaScript -->
+<script src="assets/main.js"></script>
 
-<!-- GLOBAL NAV SCRIPT -->
-<script src="assets/script.js" defer></script>
-
-
+<!-- Initialize Scripts -->
 <script>
-	// BRAND FILTER
-	const brandSelect = document.getElementById('brandSelect');
-	const cards = document.querySelectorAll('.product-card');
+// Initialize AOS
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+});
 
-	brandSelect.addEventListener('change', () => {
-		const selected = brandSelect.value;
-		cards.forEach(card => {
-			const brand = card.dataset.brand;
-			card.style.display = (selected === 'all' || selected === brand) ? "block" : "none";
-		});
-	});
+// Update footer year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// PRODUCT FILTER
+const brandSelect = document.getElementById('brandSelect');
+const productThumbnails = document.querySelectorAll('.product-thumbnail');
+
+brandSelect.addEventListener('change', () => {
+    const selected = brandSelect.value;
+    productThumbnails.forEach(thumbnail => {
+        const brand = thumbnail.dataset.brand;
+        if (selected === 'all' || selected === brand) {
+            thumbnail.style.display = 'block';
+            // Re-trigger AOS animation for visible thumbnails
+            thumbnail.classList.add('aos-animate');
+        } else {
+            thumbnail.style.display = 'none';
+        }
+    });
+});
+
+// Enhanced thumbnail interactions
+productThumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('mouseenter', () => {
+        const box = thumbnail.querySelector('.thumbnail-box');
+        const img = thumbnail.querySelector('.product-img');
+        if (box) {
+            box.style.transform = 'translateY(-5px)';
+            box.style.boxShadow = '0 15px 35px rgba(94, 42, 42, 0.2)';
+        }
+        if (img) {
+            img.style.transform = 'scale(1.1)';
+        }
+    });
+    
+    thumbnail.addEventListener('mouseleave', () => {
+        const box = thumbnail.querySelector('.thumbnail-box');
+        const img = thumbnail.querySelector('.product-img');
+        if (box) {
+            box.style.transform = 'translateY(0)';
+            box.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+        }
+        if (img) {
+            img.style.transform = 'scale(1)';
+        }
+    });
+});
 </script>
 
 </body>

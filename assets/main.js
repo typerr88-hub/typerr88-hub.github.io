@@ -83,5 +83,48 @@ navToggle.addEventListener('click', () => {
     siteNav.classList.toggle('nav-open');
 });
 
+    /* ===========================
+       PARTNER CARDS INTERACTION
+       =========================== */
+    const partnerCards = document.querySelectorAll('.partner-card');
+    
+    partnerCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            // Add a subtle pulse effect to the logo when hovering
+            const logo = card.querySelector('.partner-logo');
+            if (logo) {
+                logo.style.transform = 'scale(1.1)';
+            }
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            // Reset logo scale
+            const logo = card.querySelector('.partner-logo');
+            if (logo) {
+                logo.style.transform = 'scale(1)';
+            }
+        });
+    });
+
+    /* ===========================
+       SMOOTH SCROLLING FOR ANCHOR LINKS
+       =========================== */
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetId = link.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                e.preventDefault();
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
 });
 
