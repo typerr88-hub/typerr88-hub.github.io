@@ -74,16 +74,17 @@ document.addEventListener("DOMContentLoaded", () => {
        MOBILE MENU TOGGLE
        =========================== */
    
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("nav-toggle");
+    const nav = document.getElementById("site-nav");
 
-const toggle = document.getElementById("nav-toggle");
-const nav = document.getElementById("site-nav");
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("show");      // Show/hide menu
+        toggle.classList.toggle("active"); // Animate hamburger
 
-toggle.addEventListener("click", () => {
-    nav.classList.toggle("show");      // Show/hide menu
-    toggle.classList.toggle("active"); // Animate hamburger
-
-    // Update aria-expanded for accessibility
-    const expanded = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", !expanded);
+        // Update aria-expanded for accessibility
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", !expanded);
+    });
 });
 
