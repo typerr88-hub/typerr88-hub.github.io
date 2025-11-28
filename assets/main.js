@@ -75,12 +75,17 @@ document.addEventListener("DOMContentLoaded", () => {
        =========================== */
    
 document.addEventListener("DOMContentLoaded", () => {
+    // Get the toggle button and navigation menu
     const toggle = document.getElementById("nav-toggle");
     const nav = document.getElementById("site-nav");
 
+    // When the toggle button is clicked
     toggle.addEventListener("click", () => {
-        nav.classList.toggle("show");      // Show/hide menu
-        toggle.classList.toggle("active"); // Animate hamburger
+        // Toggle the 'show' class on nav to show/hide menu
+        nav.classList.toggle("show");
+
+        // Toggle 'active' class on hamburger for animation
+        toggle.classList.toggle("active");
 
         // Update aria-expanded for accessibility
         const expanded = toggle.getAttribute("aria-expanded") === "true";
