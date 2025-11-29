@@ -166,7 +166,7 @@ body.menu-open {
 .brand {
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
     font-weight: 700;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -181,6 +181,8 @@ body.menu-open {
     font-size: 28px;
     color: var(--primary-color);
     letter-spacing: -1px;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-weight: bold;
 }
 
 .brand-sub {
@@ -188,6 +190,8 @@ body.menu-open {
     color: var(--secondary-color);
     letter-spacing: 2px;
     margin-top: -5px;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-weight: bold;
 }
 
 /* ===================== PARTNERS SECTION ===================== */
