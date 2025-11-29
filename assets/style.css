@@ -58,12 +58,6 @@ body.menu-open {
     overflow: hidden;
 }
 
-@media (min-width: 901px) {
-    body.menu-open {
-        overflow: auto;
-    }
-}
-
 .container {
     width: 100%;
     max-width: 1200px;
@@ -596,7 +590,7 @@ body.menu-open {
 
 /* MOBILE TOGGLE BUTTON */
 .nav-toggle {
-    display: none;
+    display: block;
     background: none;
     border: none;
     cursor: pointer;
@@ -643,72 +637,70 @@ body.menu-open {
     background: var(--secondary-color);
 }
 
-/* Mobile menu */
-@media(max-width: 900px) {
-    .nav-toggle { 
-        display: block; 
-    }
-    
-    .site-nav { 
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(10px);
-        box-shadow: var(--shadow-medium);
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        border-top: 1px solid var(--border-color);
-    }
-    
-    .site-nav.show { 
-        max-height: 500px;
-    }
-    
-    .site-nav ul {
-        flex-direction: column;
-        gap: 0;
-        padding: 20px;
-        width: 100%;
-    }
-    
-    .site-nav li {
-        width: 100%;
-        text-align: left;
-        border-bottom: 1px solid var(--border-color);
-    }
-    
-    .site-nav li:last-child {
-        border-bottom: none;
-    }
-    
-    .site-nav a {
-        font-size: 17px;
-        padding: 15px 10px;
-        display: block;
-        width: 100%;
-        /* Improve touch target size for mobile */
-        min-height: 48px;
-        display: flex;
-        align-items: center;
-    }
-    
-    .site-nav a::after {
-        display: none;
-    }
-    
-    .site-nav a:hover,
-    .site-nav a:active {
-        background: var(--background-light);
-        padding-left: 20px;
-    }
-    
-    /* Active state for better touch feedback */
-    .site-nav a:active {
-        background: rgba(94, 42, 42, 0.1);
-    }
+/* Mobile menu - Now works at all screen sizes */
+.nav-toggle { 
+    display: block; 
+}
+
+.site-nav { 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-medium);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border-top: 1px solid var(--border-color);
+}
+
+.site-nav.show { 
+    max-height: 500px;
+}
+
+.site-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.site-nav li {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-nav li:last-child {
+    border-bottom: none;
+}
+
+.site-nav a {
+    font-size: 17px;
+    padding: 15px 10px;
+    display: block;
+    width: 100%;
+    /* Improve touch target size for mobile */
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.site-nav a::after {
+    display: none;
+}
+
+.site-nav a:hover,
+.site-nav a:active {
+    background: var(--background-light);
+    padding-left: 20px;
+}
+
+/* Active state for better touch feedback */
+.site-nav a:active {
+    background: rgba(94, 42, 42, 0.1);
 }
 
 
