@@ -74,14 +74,83 @@ document.addEventListener("DOMContentLoaded", () => {
        MOBILE MENU TOGGLE
        =========================== */
    
-   // MOBILE NAV TOGGLE
-const navToggle = document.getElementById('nav-toggle');
-const siteNav = document.getElementById('site-nav');
+    // MOBILE NAV TOGGLE
+    const navToggle = document.getElementById('nav-toggle');
+    const siteNav = document.getElementById('site-nav');
 
-navToggle.addEventListener('click', () => {
-    navToggle.classList.toggle('open');
-    siteNav.classList.toggle('nav-open');
-});
+    if (navToggle && siteNav) {
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            siteNav.classList.toggle('show');
+            
+            // Update aria-expanded for accessibility
+            const isExpanded = siteNav.classList.contains('show');
+            navToggle.setAttribute('aria-expanded', isExpanded);
+            
+            // Prevent body scrolling when menu is open on mobile
+            if (window.innerWidth <= 900) {
+                document.body.classList.toggle('menu-open', isExpanded);
+            }
+        });
+        
+        // Close menu when clicking on a link (for single-page navigation)
+        const navLinks = siteNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Close menu on mobile when link is clicked
+                if (window.innerWidth <= 900) {
+                    navToggle.classList.remove('active');
+                    siteNav.classList.remove('show');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    document.body.classList.remove('menu-open');
+                }
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 900) {
+                if (!navToggle.contains(e.target) && !siteNav.contains(e.target)) {
+                    navToggle.classList.remove('active');
+                    siteNav.classList.remove('show');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    document.body.classList.remove('menu-open');
+                }
+            }
+        });
+        
+        // Handle window resize - close menu and remove body class if resizing to desktop
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                if (window.innerWidth > 900) {
+                    navToggle.classList.remove('active');
+                    siteNav.classList.remove('show');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    document.body.classList.remove('menu-open');
+                }
+            }, 250);
+        });
+    }
+    
+    /* ===========================
+       HEADER SCROLL EFFECT
+       =========================== */
+    const header = document.querySelector('.site-header');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    });
 
     /* ===========================
        PARTNER CARDS INTERACTION
