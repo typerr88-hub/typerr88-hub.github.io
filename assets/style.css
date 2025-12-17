@@ -2508,6 +2508,18 @@ p, li, span {
     margin-bottom: 3rem;
 }
 
+/* Ensure paragraphs wrap to the container width and avoid breaking words mid-line */
+.about-text p,
+.about-text .about-intro,
+.about-text .about-detail,
+.about-text .about-mission {
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
 .about-intro {
     font-size: 1.1rem;
     line-height: 1.8;
