@@ -53,6 +53,28 @@ body {
     overflow-x: hidden;
 }
 
+/* Prevent mid-word breaks and hyphenation site-wide so text fits container width */
+/* Applies to main textual elements across all pages (paragraphs, headings, lists, links) */
+body,
+body p,
+body li,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body a,
+body span,
+body div {
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
 /* Prevent scrolling when mobile menu is open */
 body.menu-open {
     overflow: hidden;
