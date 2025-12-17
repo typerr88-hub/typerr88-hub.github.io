@@ -200,7 +200,7 @@ body.menu-open {
 }
 
 .brand-main {
-    font-size: 28px;
+    font-size: 25px;
     color: var(--primary-color);
     letter-spacing: -1px;
     font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
